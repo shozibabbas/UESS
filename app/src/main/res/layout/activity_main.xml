@@ -7,16 +7,24 @@
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_above="@+id/loginBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="99dp"
-        android:text="@string/app_name" />
-    
-        <Button
-            android:id="@+id/button"
+        android:layout_marginBottom="157dp" />
+
+    <Button
+        android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="call method" />
+        android:layout_alignEnd="@+id/tv1"
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tv1"
+        android:layout_alignStart="@+id/tv1"
+        android:layout_marginBottom="141dp"
+        android:onClick="loginBtnClick"
+        android:text="Login" />
 
 </RelativeLayout>

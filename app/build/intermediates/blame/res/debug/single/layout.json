@@ -1,5 +1,17 @@
 [
     {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dashboard.xml",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\drawer_dashboard.xml",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\drawer_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
+    },
+    {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
         "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\activity_login.xml"
     },

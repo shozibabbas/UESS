@@ -4,6 +4,7 @@ import org.ksoap2.serialization.SoapObject;
 import com.ufone.transport.Connection;
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -23,23 +24,11 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		try {
-			((Button)findViewById(R.id.button)).setOnClickListener(new View.OnClickListener() {
-				@Override
-				public void onClick(View v) {
-					DataFetcher df = new DataFetcher();
-					df.setRequestPath("GetEmployessJSON");
-					df.setResponsePath("GetEmployessJSONResult");
-					df.execute();
-					String r = df.getJSONArray().toString();
-					TextView tv = (TextView) findViewById(R.id.tv1);
-					tv.setText(r);
-				}
-			});
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+
+	}
+
+	public void loginBtnClick(View v) {
+		startActivity(new Intent(MainActivity.this, LoginActivity.class));
 	}
 }
 

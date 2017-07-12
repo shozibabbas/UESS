@@ -11,12 +11,20 @@
     tools:context="com.ufone.uess.LoginActivity">
 
     <!-- Login progress -->
+
     <ProgressBar
         android:id="@+id/login_progress"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/loggingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logging In"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
         android:visibility="gone" />
 
     <ScrollView
@@ -35,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/prompt_email"
-                android:inputType="textEmailAddress"
+                android:inputType="text"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -53,7 +61,6 @@
 
             <Button
                 android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
