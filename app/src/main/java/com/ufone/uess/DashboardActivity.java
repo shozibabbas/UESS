@@ -6,6 +6,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -35,6 +36,10 @@ public class DashboardActivity extends Activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // authentication
+        if(!UserAuthentication.authenticate())
+            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 

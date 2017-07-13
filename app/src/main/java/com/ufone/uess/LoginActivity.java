@@ -34,6 +34,10 @@ public class LoginActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // authentication
+        if(UserAuthentication.authenticate())
+            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.

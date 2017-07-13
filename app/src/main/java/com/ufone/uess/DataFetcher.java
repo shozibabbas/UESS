@@ -8,6 +8,7 @@ import com.ufone.transport.Connection;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 import org.ksoap2.serialization.SoapObject;
 
 import java.util.Map;
@@ -54,6 +55,15 @@ public class DataFetcher {
     public JSONArray getJSONArray() {
         try {
             return new JSONArray(this.response);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public JSONObject getJSONObject() {
+        try {
+            return new JSONObject(this.response);
         } catch (JSONException e) {
             e.printStackTrace();
         }
