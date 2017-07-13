@@ -20,11 +20,10 @@ import java.util.Map;
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends Activity /*implements LoaderCallbacks<Cursor>*/ {
+public class LoginActivity extends Activity {
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
      */
-    //private UserLoginTask mAuthTask = null;
 
     // UI references.
     private AutoCompleteTextView mEmailView;
@@ -136,7 +135,7 @@ public class LoginActivity extends Activity /*implements LoaderCallbacks<Cursor>
 
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
-        return password.length() > 4 && (!password.matches("[A-Za-z0-9 ]*")) && (!(password.contains("AND") || password.contains("NOT"))) && (!password.equals(password.toLowerCase())) && (!password.equals(password.toUpperCase()));
+        return password.length() > 1 /*&& (!password.matches("[A-Za-z0-9 ]*")) && (!(password.contains("AND") || password.contains("NOT"))) && (!password.equals(password.toLowerCase())) && (!password.equals(password.toUpperCase()))*/;
     }
 }
 
