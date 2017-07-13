@@ -123,6 +123,10 @@ public class LoginActivity extends Activity {
                 mLoginFormView.setVisibility(View.VISIBLE);
                 mEmailView.setError(getString(R.string.error_incorrect));
                 mPasswordView.setError(getString(R.string.error_incorrect));
+
+                StorageController.writeData("userEmail", email);
+                StorageController.writeData("userPassword", email);
+                StorageController.writeData("lastCallTime", System.currentTimeMillis());
             }
 
         }

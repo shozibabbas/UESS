@@ -4,6 +4,7 @@ import org.ksoap2.serialization.SoapObject;
 import com.ufone.transport.Connection;
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -24,7 +25,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-
+		StorageController.setSharedPref(getPreferences(Context.MODE_PRIVATE));
 	}
 
 	public void loginBtnClick(View v) {
@@ -39,7 +40,7 @@ public class MainActivity extends Activity {
  	df.setResponsePath("UserAuthenticatedResult");
  	Map<String, String> m = new HashMap<String, String>();
  	m.put("username", "sayyed.shozib");
- 	m.put("pwd", "6242746942naq-V");
+ 	m.put("pwd", "samplePassword");
  	df.setRequestParams(m);
  	df.execute();
  	String r = df.getResponse();
