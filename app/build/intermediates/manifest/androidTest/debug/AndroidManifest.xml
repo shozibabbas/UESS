@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.test.webservice.test">
+    package="com.ufone.uess.test">
 
     <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="21" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.test.webservice"
+                     android:targetPackage="com.ufone.uess"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.test.webservice"/>
+                     android:label="Tests for com.ufone.uess"/>
 </manifest>

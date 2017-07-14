@@ -2,10 +2,14 @@ package com.ufone.uess;
 
 import org.ksoap2.serialization.SoapObject;
 import com.ufone.transport.Connection;
+
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -22,9 +26,6 @@ public class MainActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// authentication
-		/*if(!UserAuthentication.authenticate())
-			startActivity(new Intent(MainActivity.this, LoginActivity.class));*/
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);

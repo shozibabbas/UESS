@@ -30,4 +30,6 @@
 
     <string name="action_example">Example action</string>
 
+    <string name="dashboard_welcome_message">Swipe right to view options or click the Drawer icon in the top-left corner</string>
+
 </resources>

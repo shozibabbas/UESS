@@ -35,11 +35,10 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // authentication
-        if(UserAuthentication.authenticate())
-            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         //populateAutoComplete();
@@ -57,6 +56,19 @@ public class LoginActivity extends Activity {
         mLoginFormView = findViewById(R.id.login_form);
         progressBar = (ProgressBar) findViewById(R.id.login_progress);
         loggingText = (TextView) findViewById(R.id.loggingText);
+
+        progressBar.setVisibility(View.VISIBLE);
+        loggingText.setText("Logging In");
+        loggingText.setVisibility(View.VISIBLE);
+        mLoginFormView.setVisibility(View.GONE);
+        if(UserAuthentication.authenticate())
+            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+        else {
+            progressBar.setVisibility(View.GONE);
+            loggingText.setText("Logging In");
+            loggingText.setVisibility(View.GONE);
+            mLoginFormView.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
@@ -130,7 +142,6 @@ public class LoginActivity extends Activity {
                 StorageController.writeData("userPassword", email);
                 StorageController.writeData("lastCallTime", System.currentTimeMillis());
                 startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
-                finish();
             }
             else {
                 progressBar.setVisibility(View.GONE);

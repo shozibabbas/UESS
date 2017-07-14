@@ -37,8 +37,8 @@ public class DashboardActivity extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // authentication
-        if(!UserAuthentication.authenticate())
-            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+        /*if(!UserAuthentication.authenticate())
+            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));*/
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
@@ -72,12 +72,15 @@ public class DashboardActivity extends Activity
         switch (number) {
             case 1:
                 mTitle = getString(R.string.title_section1);
+                getActionBar().setTitle(mTitle);
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
+                getActionBar().setTitle(mTitle);
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+                getActionBar().setTitle(mTitle);
                 break;
         }
     }
@@ -86,7 +89,7 @@ public class DashboardActivity extends Activity
         ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setTitle(R.string.title_activity_dashboard);
+        actionBar.setTitle(mTitle);
     }
 
     /**

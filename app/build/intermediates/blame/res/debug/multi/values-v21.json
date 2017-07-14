@@ -7,9 +7,9 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endLine": 4,
+                    "endLine": 8,
                     "endColumn": 12,
-                    "endOffset": 226
+                    "endOffset": 472
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values-v21\\styles.xml",
@@ -17,9 +17,9 @@
                         "startLine": 3,
                         "startColumn": 4,
                         "startOffset": 59,
-                        "endLine": 5,
+                        "endLine": 9,
                         "endColumn": 12,
-                        "endOffset": 232
+                        "endOffset": 482
                     }
                 }
             }
