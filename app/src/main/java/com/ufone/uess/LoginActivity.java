@@ -59,6 +59,13 @@ public class LoginActivity extends Activity {
         loggingText = (TextView) findViewById(R.id.loggingText);
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        if(UserAuthentication.authenticate())
+            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+    }
+
 
     /**
      * Attempts to sign in or register the account specified by the login form.
@@ -116,10 +123,14 @@ public class LoginActivity extends Activity {
             df.execute();
             String response = df.getResponse();
             loggingText.setText(response);
-            if(response.equals("true")) {
+            if(response.equals("\"true\"")) {
                 progressBar.setVisibility(View.GONE);
                 loggingText.setVisibility(View.GONE);
+                StorageController.writeData("userEmail", email);
+                StorageController.writeData("userPassword", email);
+                StorageController.writeData("lastCallTime", System.currentTimeMillis());
                 startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+                finish();
             }
             else {
                 progressBar.setVisibility(View.GONE);
@@ -127,10 +138,6 @@ public class LoginActivity extends Activity {
                 mLoginFormView.setVisibility(View.VISIBLE);
                 mEmailView.setError(getString(R.string.error_incorrect));
                 mPasswordView.setError(getString(R.string.error_incorrect));
-
-                StorageController.writeData("userEmail", email);
-                StorageController.writeData("userPassword", email);
-                StorageController.writeData("lastCallTime", System.currentTimeMillis());
             }
 
         }

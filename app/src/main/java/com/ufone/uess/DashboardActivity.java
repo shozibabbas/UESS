@@ -62,6 +62,12 @@ public class DashboardActivity extends Activity
                 .commit();
     }
 
+    @Override
+    public void onBackPressed() {
+
+
+    }
+
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
@@ -80,7 +86,7 @@ public class DashboardActivity extends Activity
         ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
-        actionBar.setTitle(mTitle);
+        actionBar.setTitle(R.string.title_activity_dashboard);
     }
 
     /**

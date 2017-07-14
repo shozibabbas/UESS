@@ -23,8 +23,8 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// authentication
-		if(!UserAuthentication.authenticate())
-			startActivity(new Intent(MainActivity.this, LoginActivity.class));
+		/*if(!UserAuthentication.authenticate())
+			startActivity(new Intent(MainActivity.this, LoginActivity.class));*/
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
