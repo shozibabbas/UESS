@@ -745,8 +745,8 @@
                     "startLine": 110,
                     "startColumn": 4,
                     "startOffset": 10210,
-                    "endColumn": 58,
-                    "endOffset": 10264
+                    "endColumn": 72,
+                    "endOffset": 10278
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml",
@@ -754,8 +754,8 @@
                         "startLine": 38,
                         "startColumn": 4,
                         "startOffset": 1811,
-                        "endColumn": 58,
-                        "endOffset": 1865
+                        "endColumn": 72,
+                        "endOffset": 1879
                     }
                 }
             },
@@ -763,9 +763,9 @@
                 "to": {
                     "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 10269,
+                    "startOffset": 10283,
                     "endColumn": 71,
-                    "endOffset": 10336
+                    "endOffset": 10350
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -775,9 +775,9 @@
                 "to": {
                     "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 10341,
+                    "startOffset": 10355,
                     "endColumn": 53,
-                    "endOffset": 10390
+                    "endOffset": 10404
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -787,9 +787,9 @@
                 "to": {
                     "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 10395,
+                    "startOffset": 10409,
                     "endColumn": 79,
-                    "endOffset": 10470
+                    "endOffset": 10484
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -799,9 +799,9 @@
                 "to": {
                     "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 10475,
+                    "startOffset": 10489,
                     "endColumn": 77,
-                    "endOffset": 10548
+                    "endOffset": 10562
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -811,9 +811,9 @@
                 "to": {
                     "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 10553,
+                    "startOffset": 10567,
                     "endColumn": 75,
-                    "endOffset": 10624
+                    "endOffset": 10638
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -823,9 +823,9 @@
                 "to": {
                     "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 10629,
+                    "startOffset": 10643,
                     "endColumn": 69,
-                    "endOffset": 10694
+                    "endOffset": 10708
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -835,9 +835,9 @@
                 "to": {
                     "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 10699,
+                    "startOffset": 10713,
                     "endColumn": 56,
-                    "endOffset": 10751
+                    "endOffset": 10765
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -847,9 +847,9 @@
                 "to": {
                     "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 10756,
+                    "startOffset": 10770,
                     "endColumn": 75,
-                    "endOffset": 10827
+                    "endOffset": 10841
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -859,9 +859,9 @@
                 "to": {
                     "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 10832,
+                    "startOffset": 10846,
                     "endColumn": 73,
-                    "endOffset": 10901
+                    "endOffset": 10915
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -871,10 +871,10 @@
                 "to": {
                     "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 10906,
+                    "startOffset": 10920,
                     "endLine": 122,
                     "endColumn": 13,
-                    "endOffset": 11030
+                    "endOffset": 11044
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -884,9 +884,9 @@
                 "to": {
                     "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 11035,
+                    "startOffset": 11049,
                     "endColumn": 49,
-                    "endOffset": 11080
+                    "endOffset": 11094
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -896,9 +896,9 @@
                 "to": {
                     "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 11085,
+                    "startOffset": 11099,
                     "endColumn": 52,
-                    "endOffset": 11133
+                    "endOffset": 11147
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -908,9 +908,9 @@
                 "to": {
                     "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 11138,
+                    "startOffset": 11152,
                     "endColumn": 62,
-                    "endOffset": 11196
+                    "endOffset": 11210
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -920,9 +920,9 @@
                 "to": {
                     "startLine": 126,
                     "startColumn": 4,
-                    "startOffset": 11201,
+                    "startOffset": 11215,
                     "endColumn": 56,
-                    "endOffset": 11253
+                    "endOffset": 11267
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -932,9 +932,9 @@
                 "to": {
                     "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 11258,
+                    "startOffset": 11272,
                     "endColumn": 59,
-                    "endOffset": 11313
+                    "endOffset": 11327
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -944,9 +944,9 @@
                 "to": {
                     "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 11318,
+                    "startOffset": 11332,
                     "endColumn": 56,
-                    "endOffset": 11370
+                    "endOffset": 11384
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -956,9 +956,9 @@
                 "to": {
                     "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 11375,
+                    "startOffset": 11389,
                     "endColumn": 52,
-                    "endOffset": 11423
+                    "endOffset": 11437
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\strings.xml"
@@ -968,10 +968,10 @@
                 "to": {
                     "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 11428,
+                    "startOffset": 11442,
                     "endLine": 133,
                     "endColumn": 12,
-                    "endOffset": 11501
+                    "endOffset": 11515
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\styles.xml"
@@ -981,10 +981,10 @@
                 "to": {
                     "startLine": 134,
                     "startColumn": 4,
-                    "startOffset": 11506,
+                    "startOffset": 11520,
                     "endLine": 143,
                     "endColumn": 12,
-                    "endOffset": 12101
+                    "endOffset": 12115
                 },
                 "from": {
                     "file": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\values\\styles.xml"

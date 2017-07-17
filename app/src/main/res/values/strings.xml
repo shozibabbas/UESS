@@ -36,6 +36,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- dummy data for profile page -->
-    <string name="dummy_name">Sayyed Shozib Abbas</string>
+    <string name="dummy_name">Sayyed Shozib Abbas\n(SIP Intern)</string>
 
 </resources>
