@@ -5,21 +5,12 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
-
-import com.ufone.uess.R;
 
 public class DashboardActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -36,12 +27,13 @@ public class DashboardActivity extends Activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // authentication
-        /*if(!UserAuthentication.authenticate())
-            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));*/
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+        // authentication
+        if(!UserAuthentication.authenticate())
+            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -69,10 +61,18 @@ public class DashboardActivity extends Activity
     }
 
     public void onSectionAttached(int number) {
+        // authentication
+        if(!UserAuthentication.authenticate())
+            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+
         switch (number) {
             case 1:
                 mTitle = getString(R.string.title_section1);
-                getActionBar().setTitle(mTitle);
+                //getActionBar().setTitle(mTitle);
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, UserProfileFragment.newInstance())
+                        .commit();
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
@@ -129,6 +129,33 @@ public class DashboardActivity extends Activity
             super.onAttach(activity);
             ((DashboardActivity) activity).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
+        }
+    }
+
+    public static class UserProfileFragment extends Fragment {
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "2";
+
+        public UserProfileFragment() {
+        }
+
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static UserProfileFragment newInstance() {
+            UserProfileFragment fragment = new UserProfileFragment();
+            return fragment;
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_user_profile, container, false);
+            return rootView;
         }
     }
 

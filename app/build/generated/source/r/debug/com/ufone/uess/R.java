@@ -49,6 +49,7 @@ public final class R {
         public static final int activity_main=0x7f030002;
         public static final int drawer_dashboard=0x7f030003;
         public static final int fragment_dashboard=0x7f030004;
+        public static final int fragment_user_profile=0x7f030005;
     }
     public static final class menu {
         public static final int dashboard=0x7f080000;
@@ -67,30 +68,24 @@ public final class R {
         public static final int error_incorrect_password=0x7f070008;
         public static final int error_invalid_email=0x7f070009;
         public static final int error_invalid_password=0x7f07000a;
-        public static final int hello_world=0x7f07000b;
-        public static final int navigation_drawer_close=0x7f07000c;
-        public static final int navigation_drawer_open=0x7f07000d;
-        public static final int permission_rationale=0x7f07000e;
-        public static final int prompt_email=0x7f07000f;
-        public static final int prompt_password=0x7f070010;
-        public static final int title_activity_dashboard=0x7f070011;
-        public static final int title_activity_login=0x7f070012;
-        public static final int title_section1=0x7f070013;
-        public static final int title_section2=0x7f070014;
-        public static final int title_section3=0x7f070015;
+        public static final int hello_blank_fragment=0x7f07000b;
+        public static final int hello_world=0x7f07000c;
+        public static final int navigation_drawer_close=0x7f07000d;
+        public static final int navigation_drawer_open=0x7f07000e;
+        public static final int permission_rationale=0x7f07000f;
+        public static final int prompt_email=0x7f070010;
+        public static final int prompt_password=0x7f070011;
+        public static final int title_activity_dashboard=0x7f070012;
+        public static final int title_activity_login=0x7f070013;
+        public static final int title_section1=0x7f070014;
+        public static final int title_section2=0x7f070015;
+        public static final int title_section3=0x7f070016;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
          */
         public static final int AppBaseTheme=0x7f040000;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f040001;
     }
 }

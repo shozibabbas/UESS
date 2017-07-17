@@ -3,30 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_928d0de94d78ec69e4460573dd4a51b8778dc268.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\sayyed.shozib\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
         <dex dex="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_e1dea6ca2c6c7e277751ce95619d9406e223f83b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_fd307a8f8b2fc2ac1754ed51010fc1bd643a882f.jar" />
     </item>
     <item
         is-multidex="false"

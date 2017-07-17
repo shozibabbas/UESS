@@ -17,7 +17,7 @@ ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\Andro
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\dc48b933aca33527b477a97eaf801cd685eb10b6\output\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml
@@ -60,7 +60,7 @@ ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\Andro
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:20:22-69
 application
 ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:22:5-42:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\dc48b933aca33527b477a97eaf801cd685eb10b6\output\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:25:9-41
 	android:allowBackup
