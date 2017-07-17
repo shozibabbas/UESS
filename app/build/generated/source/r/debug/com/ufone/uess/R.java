@@ -458,9 +458,13 @@ containing a value of this type.
         public static final int layout_optimizationLevel=0x7f01002b;
     }
     public static final class color {
-        public static final int primary_text_material_light=0x7f060000;
-        public static final int secondary_text_material_dark=0x7f060001;
-        public static final int secondary_text_material_light=0x7f060002;
+        public static final int material_dark_color=0x7f060000;
+        public static final int primary_text_color=0x7f060001;
+        public static final int primary_text_material_light=0x7f060002;
+        public static final int secondary_text_color=0x7f060003;
+        public static final int secondary_text_color_dark=0x7f060004;
+        public static final int secondary_text_material_dark=0x7f060005;
+        public static final int secondary_text_material_light=0x7f060006;
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f050000;
@@ -471,10 +475,11 @@ containing a value of this type.
         public static final int drawer_shadow=0x7f020000;
         public static final int ic_drawer=0x7f020001;
         public static final int ic_launcher=0x7f020002;
+        public static final int placeholder=0x7f020003;
     }
     public static final class id {
-        public static final int action_example=0x7f090018;
-        public static final int action_settings=0x7f090019;
+        public static final int action_example=0x7f090019;
+        public static final int action_settings=0x7f09001a;
         public static final int all=0x7f090005;
         public static final int basic=0x7f090006;
         public static final int chains=0x7f090007;
@@ -483,7 +488,6 @@ containing a value of this type.
         public static final int email=0x7f090010;
         public static final int email_login_form=0x7f09000f;
         public static final int email_sign_in_button=0x7f090013;
-        public static final int imageView3=0x7f090017;
         public static final int loggingText=0x7f09000d;
         public static final int login=0x7f090012;
         public static final int loginBtn=0x7f090015;
@@ -494,10 +498,12 @@ containing a value of this type.
         public static final int packed=0x7f090003;
         public static final int parent=0x7f090000;
         public static final int password=0x7f090011;
+        public static final int profileImage=0x7f090017;
         public static final int section_label=0x7f090016;
         public static final int spread=0x7f090001;
         public static final int spread_inside=0x7f090004;
         public static final int tv1=0x7f090014;
+        public static final int u_p_Name=0x7f090018;
         public static final int wrap=0x7f090002;
     }
     public static final class layout {
@@ -520,36 +526,30 @@ containing a value of this type.
         public static final int action_sign_in_short=0x7f070003;
         public static final int app_name=0x7f070004;
         public static final int dashboard_welcome_message=0x7f070005;
-        public static final int error_field_required=0x7f070006;
-        public static final int error_incorrect=0x7f070007;
-        public static final int error_incorrect_password=0x7f070008;
-        public static final int error_invalid_email=0x7f070009;
-        public static final int error_invalid_password=0x7f07000a;
-        public static final int hello_blank_fragment=0x7f07000b;
-        public static final int hello_world=0x7f07000c;
-        public static final int navigation_drawer_close=0x7f07000d;
-        public static final int navigation_drawer_open=0x7f07000e;
-        public static final int permission_rationale=0x7f07000f;
-        public static final int prompt_email=0x7f070010;
-        public static final int prompt_password=0x7f070011;
-        public static final int title_activity_dashboard=0x7f070012;
-        public static final int title_activity_login=0x7f070013;
-        public static final int title_section1=0x7f070014;
-        public static final int title_section2=0x7f070015;
-        public static final int title_section3=0x7f070016;
+        public static final int dummy_name=0x7f070006;
+        public static final int error_field_required=0x7f070007;
+        public static final int error_incorrect=0x7f070008;
+        public static final int error_incorrect_password=0x7f070009;
+        public static final int error_invalid_email=0x7f07000a;
+        public static final int error_invalid_password=0x7f07000b;
+        public static final int hello_blank_fragment=0x7f07000c;
+        public static final int hello_world=0x7f07000d;
+        public static final int navigation_drawer_close=0x7f07000e;
+        public static final int navigation_drawer_open=0x7f07000f;
+        public static final int permission_rationale=0x7f070010;
+        public static final int prompt_email=0x7f070011;
+        public static final int prompt_password=0x7f070012;
+        public static final int title_activity_dashboard=0x7f070013;
+        public static final int title_activity_login=0x7f070014;
+        public static final int title_section1=0x7f070015;
+        public static final int title_section2=0x7f070016;
+        public static final int title_section3=0x7f070017;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
          */
         public static final int AppBaseTheme=0x7f040000;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f040001;
     }
     public static final class styleable {

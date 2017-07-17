@@ -1,11 +1,12 @@
 #Internal package file, do not edit.
-#Mon Jul 17 11:25:35 PKT 2017
+#Mon Jul 17 12:31:46 PKT 2017
+19.set=ANDROID_RESOURCE
 8.set=ANDROID_RESOURCE
 1.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\folders\\2\\1f\\main
 1.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\folders\\2\\1f\\main\\META-INF\\services\\org.xmlpull.v1.XmlPullParserFactory
 3.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\fragment_user_profile.xml
 3.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
-15.set=DEX
+15.set=ANDROID_RESOURCE
 4.set=ANDROID_RESOURCE
 5.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
 5.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu\\main.xml
@@ -15,15 +16,18 @@
 11.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
 9.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
 9.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_drawer.png
-13.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\fragment_dashboard.xml
+13.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\fragment_user_profile.xml
 13.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
 11.set=ANDROID_RESOURCE
 0.set=ANDROID_RESOURCE
-15.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
-15.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-17.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\drawer_dashboard.xml
+15.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher.png
+15.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
+18.set=ANDROID_RESOURCE
+17.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-mdpi-v4\\placeholder.jpg
 17.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
 7.set=ANDROID_RESOURCE
+19.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\drawer_dashboard.xml
+19.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
 14.set=ANDROID_RESOURCE
 3.set=ANDROID_RESOURCE
 10.set=ANDROID_RESOURCE
@@ -45,13 +49,15 @@
 2.set=ANDROID_RESOURCE
 12.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_dashboard.xml
 12.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
-14.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher.png
+14.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\fragment_dashboard.xml
 14.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
-16.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_login.xml
-16.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
+16.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+16.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 9.set=ANDROID_RESOURCE
-count=18
-16.set=ANDROID_RESOURCE
+count=20
+18.file=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_login.xml
+18.base=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\resources-debug.ap_
+16.set=DEX
 5.set=ANDROID_RESOURCE
 12.set=ANDROID_RESOURCE
 1.set=JAVA_RESOURCE

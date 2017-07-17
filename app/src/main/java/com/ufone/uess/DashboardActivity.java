@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class DashboardActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -32,8 +34,8 @@ public class DashboardActivity extends Activity
         setContentView(R.layout.activity_dashboard);
 
         // authentication
-        if(!UserAuthentication.authenticate())
-            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+        /*if(!UserAuthentication.authenticate())
+            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));*/
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -69,14 +71,15 @@ public class DashboardActivity extends Activity
             case 1:
                 mTitle = getString(R.string.title_section1);
                 //getActionBar().setTitle(mTitle);
-                FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction()
-                        .replace(R.id.container, UserProfileFragment.newInstance())
-                        .commit();
+
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
                 getActionBar().setTitle(mTitle);
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, UserProfileFragment.newInstance())
+                        .commit();
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
@@ -139,6 +142,10 @@ public class DashboardActivity extends Activity
          */
         private static final String ARG_SECTION_NUMBER = "2";
 
+        TextView tvName;
+        TextView tvDescription;
+        ImageView iv;
+
         public UserProfileFragment() {
         }
 
@@ -155,7 +162,15 @@ public class DashboardActivity extends Activity
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_user_profile, container, false);
+            tvName = (TextView) rootView.findViewById(R.id.u_p_Name);
+            iv = (ImageView) rootView.findViewById(R.id.profileImage);
+            fillData();
             return rootView;
+        }
+
+        public void fillData() {
+            tvName.setText(R.string.dummy_name);
+            iv.setImageResource(R.drawable.placeholder);
         }
     }
 
