@@ -84,6 +84,7 @@ public class DashboardActivity extends Activity
             case 3:
                 mTitle = getString(R.string.title_section3);
                 getActionBar().setTitle(mTitle);
+                startActivity(new Intent(DashboardActivity.this, MainDashboardActivity.class));
                 break;
         }
     }

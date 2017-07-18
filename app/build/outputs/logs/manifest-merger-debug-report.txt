@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml
@@ -17,8 +17,13 @@ ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\Andro
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\dc48b933aca33527b477a97eaf801cd685eb10b6\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sayyed.shozib\.android\build-cache\8ab6e931c64945db293ab9d906e74a3fe12b3538\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\7eee190ee0abde9a72e11012c0f78ca6c1c61775\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\d74ebd5cbc1590b08261e2671e2f10fdbf75dd9b\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\d2f6549b23bcc08186c50b07fb32c59e05a34684\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\dc48b933aca33527b477a97eaf801cd685eb10b6\output\AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\7eee190ee0abde9a72e11012c0f78ca6c1c61775\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml
@@ -60,9 +65,12 @@ ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:20:22-69
 application
-ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:22:5-42:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\dc48b933aca33527b477a97eaf801cd685eb10b6\output\AndroidManifest.xml:22:5-20
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:22:5-43:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sayyed.shozib\.android\build-cache\8ab6e931c64945db293ab9d906e74a3fe12b3538\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\7eee190ee0abde9a72e11012c0f78ca6c1c61775\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\d74ebd5cbc1590b08261e2671e2f10fdbf75dd9b\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\d2f6549b23bcc08186c50b07fb32c59e05a34684\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\dc48b933aca33527b477a97eaf801cd685eb10b6\output\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:25:9-41
 	android:allowBackup
@@ -94,8 +102,12 @@ ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:37:13-42
 activity#com.ufone.uess.DashboardActivity
-ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:39:9-41:73
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:39:9-41:64
 	android:label
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:41:13-61
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:40:13-46
+activity#com.ufone.uess.MainDashboardActivity
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:42:9-68
+	android:name
+		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:42:19-56
