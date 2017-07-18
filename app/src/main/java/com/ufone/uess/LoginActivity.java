@@ -13,6 +13,10 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -126,16 +130,22 @@ public class LoginActivity extends Activity {
             loggingText.setVisibility(View.VISIBLE);
             mLoginFormView.setVisibility(View.GONE);
             DataFetcher df = new DataFetcher();
-            df.setRequestPath("UserAuthenticated");
-            df.setResponsePath("UserAuthenticatedResult");
+            df.setRequestPath("UserAuthentication");
+            df.setResponsePath("UserAuthenticationResult");
             Map<String, String> m = new HashMap<>();
             m.put("username", email);
             m.put("pwd", password);
             df.setRequestParams(m);
             df.execute();
-            String response = df.getResponse();
-            loggingText.setText(response);
-            if(response.equals("\"true\"")) {
+            String response = null;
+            try {
+                response = ((JSONObject) df.getJSONArray().getJSONObject(0)).get("Status").toString();
+                loggingText.setText(response);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            if(response.equals("true")) {
                 progressBar.setVisibility(View.GONE);
                 loggingText.setVisibility(View.GONE);
                 StorageController.writeData("userEmail", email);
