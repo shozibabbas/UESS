@@ -39,7 +39,9 @@
         <activity
             android:name="com.ufone.uess.DashboardActivity"
             android:label="@string/title_activity_dashboard" />
-        <activity android:name="com.ufone.uess.MainDashboardActivity" />
+        <activity
+            android:name="com.ufone.uess.MainDashboardActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

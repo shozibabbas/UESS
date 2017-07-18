@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme" parent="android:Theme.DeviceDefault">
+    <style name="AppTheme" parent="android:Theme.Material.Light">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
 
-        <item name="android:colorPrimaryDark">?android:attr/colorActivatedHighlight</item>
+        <item name="android:colorPrimaryDark">?android:attr/colorMultiSelectHighlight</item>
         <item name="android:colorAccent">@android:color/holo_orange_dark</item>
-        <item name="android:colorPrimary">?android:attr/colorAccent</item>
+        <item name="android:colorPrimary">@android:color/holo_orange_dark</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/primary_text_color</item>
+        <item name="android:textColorSecondary">@color/material_dark_color</item>
+        <item name="android:textColorSecondaryInverse">@color/material_dark_color</item>
+        <item name="android:textColorPrimaryInverse">@color/material_dark_color</item>
+        <item name="android:colorForeground">@color/material_dark_color</item>
     </style>
 </resources>

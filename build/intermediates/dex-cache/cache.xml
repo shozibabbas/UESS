@@ -21,24 +21,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\sayyed.shozib\.android\build-cache\dd6586968cf416eb67613277271d1866fc24ba48\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2bf893856577f5038c0b8007a43fda3b3c5beb23">
-        <dex dex="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\pre-dexed\debug\classes_c61d8237728866ce6b05383adc1d75ee0e7c5a82.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\sayyed.shozib\.android\build-cache\dd6586968cf416eb67613277271d1866fc24ba48\output\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="be09545b7e6ff322c7286d2e80bed3b75b76c529">
-        <dex dex="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_f1696190a1d3c16376f13d9b857f3c0650f70ee1.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\libs\ksoap2-android-assembly-2.6.0-jar-with-dependencies.jar"
         jumboMode="false"
         optimize="true"

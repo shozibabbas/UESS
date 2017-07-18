@@ -39,7 +39,9 @@
         <activity
             android:name=".DashboardActivity"
             android:label="@string/title_activity_dashboard" />
-        <activity android:name=".MainDashboardActivity"></activity>
+        <activity
+            android:name=".MainDashboardActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

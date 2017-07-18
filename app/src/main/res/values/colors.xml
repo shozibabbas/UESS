@@ -3,8 +3,9 @@
     <color name="primary_text_material_light">#deffffff</color>
     <color name="secondary_text_material_dark">#b3ffffff</color>
     <color name="secondary_text_material_light">#8affffff</color>
-    <color name="material_dark_color">#303030</color>
+    <color name="material_dark_color">#ffffff</color>
     <color name="secondary_text_color">#8a000000</color>
     <color name="primary_text_color">#de000000</color>
     <color name="secondary_text_color_dark">#b3ffffff</color>
+    <color name="primary_material_light_1">#ffc107</color>
 </resources>

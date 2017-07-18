@@ -32,10 +32,12 @@
 
     <string name="dashboard_welcome_message">Swipe right to view options or click the Drawer icon in the top-left corner</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <!-- dummy data for profile page -->
     <string name="dummy_name">Sayyed Shozib Abbas\n(SIP Intern)</string>
+
+    <!-- dashboard text -->
+    <string name="empProfile">Employee Profile</string>
+    <string name="leaveBalance">Leave Balance</string>
+    <string name="settings">Settings</string>
 
 </resources>
