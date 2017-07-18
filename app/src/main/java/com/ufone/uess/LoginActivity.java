@@ -137,19 +137,27 @@ public class LoginActivity extends Activity {
             m.put("pwd", password);
             df.setRequestParams(m);
             df.execute();
-            String response = null;
-            try {
-                response = ((JSONObject) df.getJSONArray().getJSONObject(0)).get("Status").toString();
-                StorageController.writeData("Emp_No", ((JSONObject) df.getJSONArray().getJSONObject(0)).get("Emp_No").toString());
-                StorageController.writeData("AD_Name", ((JSONObject) df.getJSONArray().getJSONObject(0)).get("AD_Name").toString());
-            } catch (JSONException e) {
-                e.printStackTrace();
+            String response = df.getResponse();
+            if(!response.contains("failure")) {
+                try {
+                    response = ((JSONObject) df.getJSONArray().getJSONObject(0)).get("Status").toString();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
+            else
+                response = "false";
 
             if(response.equals("true")) {
                 progressBar.setVisibility(View.GONE);
                 loggingText.setVisibility(View.GONE);
                 StorageController.writeData("lastCallTime", System.currentTimeMillis());
+                try {
+                    StorageController.writeData("Emp_No", ((JSONObject) df.getJSONArray().getJSONObject(0)).get("Emp_No").toString());
+                    StorageController.writeData("AD_Name", ((JSONObject) df.getJSONArray().getJSONObject(0)).get("AD_Name").toString());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
                 startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
             }
             else {
