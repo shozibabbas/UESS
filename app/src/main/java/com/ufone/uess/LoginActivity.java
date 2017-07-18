@@ -140,7 +140,8 @@ public class LoginActivity extends Activity {
             String response = null;
             try {
                 response = ((JSONObject) df.getJSONArray().getJSONObject(0)).get("Status").toString();
-                loggingText.setText(response);
+                StorageController.writeData("Emp_No", ((JSONObject) df.getJSONArray().getJSONObject(0)).get("Emp_No").toString());
+                StorageController.writeData("AD_Name", ((JSONObject) df.getJSONArray().getJSONObject(0)).get("AD_Name").toString());
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -148,8 +149,6 @@ public class LoginActivity extends Activity {
             if(response.equals("true")) {
                 progressBar.setVisibility(View.GONE);
                 loggingText.setVisibility(View.GONE);
-                StorageController.writeData("userEmail", email);
-                StorageController.writeData("userPassword", email);
                 StorageController.writeData("lastCallTime", System.currentTimeMillis());
                 startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
             }

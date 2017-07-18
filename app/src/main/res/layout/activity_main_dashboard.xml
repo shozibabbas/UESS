@@ -20,6 +20,7 @@
         android:layout_row="0"
         android:background="#ffd788"
         android:drawableTop="@drawable/persona"
+        android:onClick="openEmployeeProfile"
         android:padding="20dp"
         android:text="@string/empProfile"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
@@ -35,23 +36,9 @@
         android:layout_row="0"
         android:background="#ddff88"
         android:drawableTop="@drawable/leave"
+        android:onClick="openDashboard"
         android:padding="20dp"
         android:text="@string/leaveBalance"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:textColor="@color/secondary_text_color" />
-
-    <Button
-        android:id="@+id/button3"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="168dp"
-        android:layout_height="168dp"
-        android:layout_column="0"
-        android:layout_gravity="top|start"
-        android:layout_row="1"
-        android:background="#d5d5d5"
-        android:drawableTop="@drawable/settings"
-        android:padding="20dp"
-        android:text="@string/settings"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="@color/secondary_text_color" />
 

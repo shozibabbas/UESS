@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:text="Logging In"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="@color/primary_text_color"
         android:visibility="gone" />
 
     <ScrollView

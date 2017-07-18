@@ -4,6 +4,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.annotation.BoolRes;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  * Created by sayyed.shozib on 7/13/2017.
  */
@@ -39,6 +43,16 @@ public class StorageController {
         editor.putBoolean(key, value);
         return editor.commit();
     }
+    public static boolean writeData(String key, JSONObject value) {
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString(key, value.toString());
+        return editor.commit();
+    }
+    public static boolean writeData(String key, JSONArray value) {
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString(key, value.toString());
+        return editor.commit();
+    }
 
     public static String readString(String key) {
         return sharedPref.getString(key, "undefined");
@@ -54,6 +68,22 @@ public class StorageController {
     }
     public static Boolean readBoolean(String key) {
         return sharedPref.getBoolean(key, false);
+    }
+    public static JSONObject readJSONObject(String key) {
+        try {
+            return new JSONObject((String) sharedPref.getString(key, "{'error': true}"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    public static JSONArray readJSONArray(String key) {
+        try {
+            return new JSONArray((String) sharedPref.getString(key, "{'error': true}"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static Boolean remove(String key) {

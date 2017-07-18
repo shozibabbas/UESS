@@ -42,6 +42,7 @@
         <activity
             android:name="com.ufone.uess.MainDashboardActivity"
             android:screenOrientation="portrait" />
+        <activity android:name="com.ufone.uess.EmployeeProfileActivity" />
     </application>
 
 </manifest>

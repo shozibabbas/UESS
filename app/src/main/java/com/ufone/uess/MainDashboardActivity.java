@@ -16,4 +16,8 @@ public class MainDashboardActivity extends Activity {
     public void openDashboard(View v) {
         startActivity(new Intent(MainDashboardActivity.this, DashboardActivity.class));
     }
+
+    public void openEmployeeProfile(View v) {
+        startActivity(new Intent(MainDashboardActivity.this, EmployeeProfileActivity.class));
+    }
 }
