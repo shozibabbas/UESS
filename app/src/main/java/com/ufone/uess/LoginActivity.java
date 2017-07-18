@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends Activity {
+public class LoginActivity extends Activity implements AsyncResponse {
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
      */
@@ -129,7 +129,8 @@ public class LoginActivity extends Activity {
             progressBar.setVisibility(View.VISIBLE);
             loggingText.setVisibility(View.VISIBLE);
             mLoginFormView.setVisibility(View.GONE);
-            DataFetcher df = new DataFetcher();
+            AsyncDataFetcher df = new AsyncDataFetcher();
+            df.delegate = this;
             df.setRequestPath("UserAuthentication");
             df.setResponsePath("UserAuthenticationResult");
             Map<String, String> m = new HashMap<>();
@@ -137,37 +138,6 @@ public class LoginActivity extends Activity {
             m.put("pwd", password);
             df.setRequestParams(m);
             df.execute();
-            String response = df.getResponse();
-            if(!response.contains("failure")) {
-                try {
-                    response = ((JSONObject) df.getJSONArray().getJSONObject(0)).get("Status").toString();
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-            else
-                response = "false";
-
-            if(response.equals("true")) {
-                progressBar.setVisibility(View.GONE);
-                loggingText.setVisibility(View.GONE);
-                StorageController.writeData("lastCallTime", System.currentTimeMillis());
-                try {
-                    StorageController.writeData("Emp_No", ((JSONObject) df.getJSONArray().getJSONObject(0)).get("Emp_No").toString());
-                    StorageController.writeData("AD_Name", ((JSONObject) df.getJSONArray().getJSONObject(0)).get("AD_Name").toString());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
-            }
-            else {
-                progressBar.setVisibility(View.GONE);
-                loggingText.setVisibility(View.GONE);
-                mLoginFormView.setVisibility(View.VISIBLE);
-                mEmailView.setError(getString(R.string.error_incorrect));
-                mPasswordView.setError(getString(R.string.error_incorrect));
-            }
-
         }
     }
 
@@ -177,6 +147,42 @@ public class LoginActivity extends Activity {
 
     private boolean isPasswordValid(String password) {
         return password.length() > 1 /*&& (!password.matches("[A-Za-z0-9 ]*")) && (!(password.contains("AND") || password.contains("NOT"))) && (!password.equals(password.toLowerCase())) && (!password.equals(password.toUpperCase()))*/;
+    }
+
+    @Override
+    public void processFinish(String output) {
+        String response = output;
+        JSONArray responseArray = null;
+        if(!response.contains("failure")) {
+            try {
+                responseArray = new JSONArray(output);
+                response = ((JSONObject) responseArray.getJSONObject(0)).get("Status").toString();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        else
+            response = "false";
+
+        if(response.equals("true")) {
+            progressBar.setVisibility(View.GONE);
+            loggingText.setVisibility(View.GONE);
+            StorageController.writeData("lastCallTime", System.currentTimeMillis());
+            try {
+                StorageController.writeData("Emp_No", ((JSONObject) responseArray.getJSONObject(0)).get("Emp_No").toString());
+                StorageController.writeData("AD_Name", ((JSONObject) responseArray.getJSONObject(0)).get("AD_Name").toString());
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+        }
+        else {
+            progressBar.setVisibility(View.GONE);
+            loggingText.setVisibility(View.GONE);
+            mLoginFormView.setVisibility(View.VISIBLE);
+            mEmailView.setError(getString(R.string.error_incorrect));
+            mPasswordView.setError(getString(R.string.error_incorrect));
+        }
     }
 }
 
