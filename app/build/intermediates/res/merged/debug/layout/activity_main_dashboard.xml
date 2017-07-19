@@ -30,14 +30,6 @@
         android:textColor="@android:color/holo_orange_dark"
         android:textStyle="bold" />
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="0dp"
-        android:columnCount="2">
-
-    </GridLayout>
-
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -76,7 +68,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
-                android:background="#ffb5af"
+                android:background="#ffaea8"
                 android:drawableTop="@drawable/leave"
                 android:fontFamily="casual"
                 android:onClick="openDashboard"
@@ -129,13 +121,6 @@
                 android:textColor="@color/secondary_text_color" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
     </TableLayout>
 
 

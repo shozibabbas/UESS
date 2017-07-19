@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		StorageController.setSharedPref(getPreferences(Context.MODE_PRIVATE));
-		//startActivity(new Intent(MainActivity.this, EmployeeProfileActivity.class));
+		startActivity(new Intent(MainActivity.this, EmployeeProfileActivity.class));
 	}
 
 	public void loginBtnClick(View v) {

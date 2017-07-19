@@ -4,6 +4,30 @@
         "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\leave.png"
     },
     {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\organization.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\organization.png"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\email.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\email.png"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\dateto.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\dateto.png"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\mobilehome.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\mobilehome.png"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\calendar.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\calendar.png"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\home.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\home.png"
+    },
+    {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\drawer_shadow.9.png",
         "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\drawer_shadow.9.png"
     },
@@ -30,5 +54,9 @@
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\idcard.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\idcard.png"
     }
 ]
