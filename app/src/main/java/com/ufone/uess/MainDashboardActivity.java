@@ -11,13 +11,15 @@ public class MainDashboardActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_dashboard);
-    }
 
-    public void openDashboard(View v) {
-        startActivity(new Intent(MainDashboardActivity.this, DashboardActivity.class));
+        // authentication
+        if(!UserAuthentication.authenticate())
+            startActivity(new Intent(MainDashboardActivity.this, LoginActivity.class));
     }
 
     public void openEmployeeProfile(View v) {
         startActivity(new Intent(MainDashboardActivity.this, EmployeeProfileActivity.class));
     }
+
+
 }

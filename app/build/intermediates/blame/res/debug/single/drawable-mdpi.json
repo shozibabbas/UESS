@@ -12,6 +12,22 @@
         "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\ic_drawer.png"
     },
     {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\settings.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\settings.png"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\paymenthistory.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\paymenthistory.png"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\persona.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\persona.png"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\money.png",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\money.png"
+    },
+    {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     }

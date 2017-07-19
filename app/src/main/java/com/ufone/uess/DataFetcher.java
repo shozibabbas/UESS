@@ -16,6 +16,7 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * Created by sayyed.shozib on 7/12/2017.
+ * old async class
  */
 
 public class DataFetcher {

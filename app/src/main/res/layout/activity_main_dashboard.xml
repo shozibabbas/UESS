@@ -1,46 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
+    android:orientation="vertical"
     tools:context="com.ufone.uess.MainDashboardActivity"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="81dp">
 
-    <Button
-        android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="168dp"
-        android:layout_height="168dp"
-        android:layout_column="0"
-        android:layout_gravity="top|start"
-        android:layout_marginBottom="8dp"
-        android:layout_row="0"
-        android:background="#ffd788"
-        android:drawableTop="@drawable/persona"
-        android:onClick="openEmployeeProfile"
-        android:padding="20dp"
-        android:text="@string/empProfile"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:textColor="@color/secondary_text_color" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ufonelogo" />
 
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="168dp"
-        android:layout_height="168dp"
-        android:layout_column="1"
-        android:layout_gravity="top|end"
-        android:layout_row="0"
-        android:background="#ddff88"
-        android:drawableTop="@drawable/leave"
-        android:onClick="openDashboard"
-        android:padding="20dp"
-        android:text="@string/leaveBalance"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:textColor="@color/secondary_text_color" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Employee Self Service"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="#ffe0b3"
+                android:drawableTop="@drawable/persona"
+                android:fontFamily="casual"
+                android:onClick="openEmployeeProfile"
+                android:padding="20dp"
+                android:text="@string/empProfile"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/secondary_text_color" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="#ffaea8"
+                android:drawableTop="@drawable/leave"
+                android:fontFamily="casual"
+                android:onClick="openDashboard"
+                android:padding="20dp"
+                android:text="@string/leaveBalance"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/secondary_text_color" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="#ffded4"
+                android:drawableTop="@drawable/money"
+                android:fontFamily="casual"
+                android:onClick="openEmployeeProfile"
+                android:padding="20dp"
+                android:text="Provident Fund Balance"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/secondary_text_color" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="#c6ffcf"
+                android:drawableTop="@drawable/paymenthistory"
+                android:fontFamily="casual"
+                android:onClick="openDashboard"
+                android:padding="20dp"
+                android:text="Payments and Reductions"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/secondary_text_color" />
+        </TableRow>
+
+    </TableLayout>
 
 
-</GridLayout>
+</LinearLayout>

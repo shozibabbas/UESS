@@ -2,6 +2,8 @@ package com.ufone.uess;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -12,6 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class EmployeeProfileActivity extends Activity implements AsyncResponse {
@@ -19,6 +22,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
     ProgressBar e_p_ProgressBar;
     TextView e_p_EmpNo;
     TextView e_p_NameView;
+    TextView e_p_AdditionalInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,9 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         e_p_ProgressBar = (ProgressBar) findViewById(R.id.e_p_ProgressBar);
         e_p_EmpNo = (TextView) findViewById(R.id.e_p_EmpNo);
         e_p_NameView = (TextView) findViewById(R.id.e_p_NameView);
+        e_p_AdditionalInfo = (TextView) findViewById(R.id.e_p_AdditionalInfo);
+        e_p_AdditionalInfo.setMovementMethod(new ScrollingMovementMethod());
+
 
         e_p_ProgressBar.setVisibility(View.VISIBLE);
         AsyncDataFetcher df =new AsyncDataFetcher();
@@ -47,6 +54,16 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
             JSONObject response = ((JSONArray) new JSONArray(output)).getJSONObject(0);
             e_p_EmpNo.setText("Emp # " + response.get("Emp_No").toString());
             e_p_NameView.setText(response.get("Name").toString());
+            Iterator<String> keys = response.keys();
+            int i = 0;
+            while( keys.hasNext() ) {
+                while(i < 2) {
+                    i = i + 1;
+                    keys.next();
+                }
+                String key = (String)keys.next();
+                e_p_AdditionalInfo.append(Html.fromHtml("<p><small><b>" + key + " : </b></small><br />" + response.get(key) + "<br /></p>"));
+            }
         } catch (JSONException e) {
             e.printStackTrace();
         }
