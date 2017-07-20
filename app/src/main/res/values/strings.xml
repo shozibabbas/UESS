@@ -10,6 +10,7 @@
     <string name="prompt_email">Username</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_out">Sign out</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is invalid</string>
@@ -39,5 +40,18 @@
     <string name="empProfile">Employee Profile</string>
     <string name="leaveBalance">Leave Balance</string>
     <string name="settings">Settings</string>
+
+    <!-- Joining date labels -->
+    <string name="empJoiningDate">Joining Date</string>
+    <string name="empEmail">Email</string>
+    <string name="empServiceNumber">Service #</string>
+    <string name="empStatus">Status</string>
+    <string name="empLineManager">Line Manager</string>
+    <string name="empDepartment">Department</string>
+    <string name="empSubDepartment">Sub-Department</string>
+    <string name="empCNIC">CNIC</string>
+    <string name="empDOB">Date of Birth</string>
+    <string name="empTAddress">Present Address</string>
+    <string name="empPAddress">Permanent Address</string>
 
 </resources>

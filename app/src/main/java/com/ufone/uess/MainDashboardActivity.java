@@ -13,12 +13,28 @@ public class MainDashboardActivity extends Activity {
         setContentView(R.layout.activity_main_dashboard);
 
         // authentication
-        if(!UserAuthentication.authenticate())
+        if(!UserAuthentication.authenticate()) {
+            finish();
             startActivity(new Intent(MainDashboardActivity.this, LoginActivity.class));
+        }
     }
 
     public void openEmployeeProfile(View v) {
+        finish();
         startActivity(new Intent(MainDashboardActivity.this, EmployeeProfileActivity.class));
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(UserAuthentication.authenticate()) {
+            android.os.Process.killProcess(android.os.Process.myPid());
+            System.exit(1);
+        }
+        else {
+            finish();
+            startActivity(new Intent(MainDashboardActivity.this, LoginActivity.class));
+        }
+
     }
 
 

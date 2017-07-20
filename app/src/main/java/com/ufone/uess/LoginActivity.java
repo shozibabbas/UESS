@@ -150,6 +150,13 @@ public class LoginActivity extends Activity implements AsyncResponse {
     }
 
     @Override
+    public void onBackPressed() {
+        finish();
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
+    }
+
+    @Override
     public void processFinish(String output) {
         String response = output;
         JSONArray responseArray = null;
@@ -174,6 +181,7 @@ public class LoginActivity extends Activity implements AsyncResponse {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+            finish();
             startActivity(new Intent(LoginActivity.this, MainDashboardActivity.class));
         }
         else {
