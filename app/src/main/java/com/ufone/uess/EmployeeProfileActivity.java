@@ -55,6 +55,8 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_profile);
 
+        ((TextView) findViewById(R.id.titlebarTitle)).setText("Employee Profile");
+
         // authentication
         if(!UserAuthentication.authenticate())
             startActivity(new Intent(EmployeeProfileActivity.this, LoginActivity.class));
@@ -88,7 +90,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         df.setResponsePath("GetEmpProfileInfoResult");
         Map<String, String> m = new HashMap<>();
         m.put("key", StorageController.readString("Emp_No"));
-        m.put("emp_no", "3602");
+        m.put("emp_no", "885");
         df.setRequestParams(m);
         df.execute();
     }
@@ -102,7 +104,9 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
                     public void onClick(DialogInterface dialog, int which) {
                         UserAuthentication.unauthenticate();
                         finish();
-                        startActivity(new Intent(EmployeeProfileActivity.this, MainDashboardActivity.class));
+                        Intent intent = new Intent(EmployeeProfileActivity.this, LoginActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -116,8 +120,8 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
 
     @Override
     public void onBackPressed() {
-        finish();
         startActivity(new Intent(EmployeeProfileActivity.this, MainDashboardActivity.class));
+        finish();
     }
 
     //this override the implemented method from asyncTask
@@ -184,6 +188,9 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         Toast.makeText(getApplicationContext(), "Permanent Address", Toast.LENGTH_SHORT).show();
     }
 
-
+    public void backButton(View v) {
+        startActivity(new Intent(EmployeeProfileActivity.this, MainDashboardActivity.class));
+        finish();
+    }
 
 }

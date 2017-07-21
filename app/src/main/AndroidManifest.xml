@@ -39,7 +39,8 @@
         <activity
             android:name=".MainDashboardActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".EmployeeProfileActivity"></activity>
+        <activity android:name=".EmployeeProfileActivity" />
+        <activity android:name=".LeaveBalanceActivity"></activity>
     </application>
 
 </manifest>

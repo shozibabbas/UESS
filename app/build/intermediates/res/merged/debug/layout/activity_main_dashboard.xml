@@ -72,7 +72,7 @@
                 android:background="#ffaea8"
                 android:drawableTop="@drawable/leave"
                 android:fontFamily="casual"
-                android:onClick="openDashboard"
+                android:onClick="openLeaveBalance"
                 android:padding="20dp"
                 android:text="@string/leaveBalance"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"

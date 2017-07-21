@@ -54,4 +54,7 @@
     <string name="empTAddress">Present Address</string>
     <string name="empPAddress">Permanent Address</string>
 
+    <!-- Leave Balance Screen -->
+    <string name="lbDate">Session</string>
+
 </resources>

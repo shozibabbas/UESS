@@ -14,14 +14,19 @@ public class MainDashboardActivity extends Activity {
 
         // authentication
         if(!UserAuthentication.authenticate()) {
-            finish();
             startActivity(new Intent(MainDashboardActivity.this, LoginActivity.class));
+            finish();
         }
     }
 
     public void openEmployeeProfile(View v) {
-        finish();
         startActivity(new Intent(MainDashboardActivity.this, EmployeeProfileActivity.class));
+        finish();
+    }
+
+    public void openLeaveBalance(View v) {
+        startActivity(new Intent(MainDashboardActivity.this, LeaveBalanceActivity.class));
+        finish();
     }
 
     @Override

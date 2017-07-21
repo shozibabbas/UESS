@@ -21,22 +21,12 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-        <Button
-            android:id="@+id/e_p_Title"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        <include
+            layout="@layout/titlebar"
+            layout_width="match_parent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.06"
-            android:background="@android:color/holo_orange_dark"
-            android:elevation="5dp"
-            android:focusableInTouchMode="true"
-            android:gravity="end"
-            android:onClick="backPress"
-            android:padding="16dp"
-            android:soundEffectsEnabled="true"
-            android:text="@string/action_sign_out"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            android:textColor="@color/primary_text_material_light" />
+            android:layout_weight="0.06" />
 
         <ProgressBar
             android:id="@+id/e_p_ProgressBar"
@@ -81,9 +71,8 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="5dp"
                 android:text="@string/title_activity_dashboard"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
-                android:textColor="@android:color/holo_orange_dark"
-                android:textSize="30sp" />
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@android:color/holo_orange_dark" />
 
             <TextView
                 android:id="@+id/e_p_Designation"

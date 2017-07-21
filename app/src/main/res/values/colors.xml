@@ -8,4 +8,5 @@
     <color name="primary_text_color">#000000</color>
     <color name="secondary_text_color_dark">#b3ffffff</color>
     <color name="primary_material_light_1">#eeeeee</color>
+    <color name="orange_extra_dark">#f17a0a</color>
 </resources>
