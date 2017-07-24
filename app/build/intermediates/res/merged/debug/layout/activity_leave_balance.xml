@@ -15,28 +15,23 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="8dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
             <TableLayout
+                android:id="@+id/l_b_TableLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:stretchColumns="1">
 
-                <TableRow
+                <!-- <TableRow
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="#88ffbb33"
@@ -49,7 +44,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="@string/empJoiningDate"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/l_b_Date"
@@ -193,7 +188,7 @@
                         android:maxLines="100"
                         android:onClick="showHOrg" />
 
-                </TableRow>
+                </TableRow>-->
 
             </TableLayout>
 

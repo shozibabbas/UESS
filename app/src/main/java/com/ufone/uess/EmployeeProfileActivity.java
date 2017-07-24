@@ -57,7 +57,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
 
         ((TextView) findViewById(R.id.titlebarTitle)).setText("Employee Profile");
 
-        // authentication
+        // user authentication
         if(!UserAuthentication.authenticate())
             startActivity(new Intent(EmployeeProfileActivity.this, LoginActivity.class));
 
@@ -84,6 +84,8 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         signoutAlert = builder.create();
 
         e_p_ProgressBar.setVisibility(View.VISIBLE);
+
+        // data request
         AsyncDataFetcher df =new AsyncDataFetcher();
         df.delegate = this;
         df.setRequestPath("GetEmpProfileInfo");
@@ -95,6 +97,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         df.execute();
     }
 
+    // function for displaying the sign out box when the user clicks sign out button
     public void backPress(View v) {
         AlertDialog.Builder builder;
         builder = new AlertDialog.Builder(EmployeeProfileActivity.this);
@@ -156,8 +159,6 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
             dateValue = input.parse(response.get("DOJ").toString());
             o = new SimpleDateFormat("MMMM dd, yyyy");
             e_p_JoiningDate.setText(o.format(dateValue));
-
-            //e_p_Location.setText(response.get("Department").toString() + ", " + response.get("Sub_Department").toString());
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (ParseException e) {
