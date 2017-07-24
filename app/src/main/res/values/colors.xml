@@ -9,4 +9,14 @@
     <color name="secondary_text_color_dark">#b3ffffff</color>
     <color name="primary_material_light_1">#eeeeee</color>
     <color name="orange_extra_dark">#f17a0a</color>
+
+    <!-- backgrounds for alternating rows -->
+    <color name="bg_row_4_1">#ff3eacff</color>
+    <color name="bg_row_4_2">#ff93d1ff</color>
+    <color name="bg_row_2_1">#ffffa900</color>
+    <color name="bg_row_2_2">#ffffcb00</color>
+    <color name="bg_row_3_1">#ffffa9aa</color>
+    <color name="bg_row_3_2">#ffffd5d6</color>
+    <color name="bg_row_1_1">#88ffbb33</color>
+    <color name="bg_row_1_2">#64ffbb33</color>
 </resources>

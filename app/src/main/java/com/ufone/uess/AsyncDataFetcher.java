@@ -10,13 +10,15 @@ import java.util.Map;
 
 /**
  * Created by sayyed.shozib on 7/18/2017.
+ *
+ * This class is for making SOAP calls with the desired parameters and return text as output
  */
 
 public class AsyncDataFetcher extends AsyncTask<String, String, String> {
 
     protected static String requestPath = null;
     protected static String responsePath = null;
-    protected static Map<String, String> requestParams = null;
+    protected static Map<String, String> requestParams = null; // for keeping parameters to be POSTed to the request path
     protected static String response = null;
 
     public String getRequestPath() {
@@ -50,11 +52,13 @@ public class AsyncDataFetcher extends AsyncTask<String, String, String> {
         try {
             Connection connection = new Connection(requestPath);
             if(requestParams != null)
+
+                // for adding parameters to the connection
                 for (Map.Entry<String, String> entry : requestParams.entrySet())
                 {
                     connection.addProperties(entry.getKey(), entry.getValue());
                 }
-            connection.connectForSingleNode();
+            connection.connectForSingleNode(); // making connection and retrieving results
             SoapObject soapObject = connection.Result();
 
             String result = soapObject.getPropertyAsString(responsePath);

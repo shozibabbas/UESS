@@ -111,6 +111,14 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="bg_row_1_1">#88ffbb33</color>
+    <color name="bg_row_1_2">#64ffbb33</color>
+    <color name="bg_row_2_1">#ffffa900</color>
+    <color name="bg_row_2_2">#ffffcb00</color>
+    <color name="bg_row_3_1">#ffffa9aa</color>
+    <color name="bg_row_3_2">#ffffd5d6</color>
+    <color name="bg_row_4_1">#ff3eacff</color>
+    <color name="bg_row_4_2">#ff93d1ff</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
