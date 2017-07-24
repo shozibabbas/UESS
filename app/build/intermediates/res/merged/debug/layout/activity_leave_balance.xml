@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ufone.uess.LeaveBalanceActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titlebar"
+        layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#88ffbb33"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empJoiningDate"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/l_b_Date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:onClick="showHDateTo" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#64ffbb33"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empServiceNumber"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/l_b_LeaveType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:onClick="showHEmail" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#88ffbb33"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empEmail"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/l_b_CarryFwdBalance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:onClick="showHEmail" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#64ffbb33"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empStatus"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/l_b_CurrentYearEntitlement"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:maxLines="100"
+                        android:onClick="showHOrg" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#88ffbb33"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empLineManager"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/l_b_LeaveAvailed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:maxLines="100"
+                        android:onClick="showHOrg" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#64ffbb33"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empDepartment"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/l_b_AvailBalance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:maxLines="100"
+                        android:onClick="showHOrg" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

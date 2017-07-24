@@ -8,16 +8,8 @@
         "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_user_profile.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\fragment_user_profile.xml"
-    },
-    {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\drawer_dashboard.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\drawer_dashboard.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -40,8 +32,8 @@
         "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\activity_employee_profile.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_dashboard.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\titlebar.xml",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\titlebar.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
@@ -68,6 +60,10 @@
         "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_leave_balance.xml",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\activity_leave_balance.xml"
+    },
+    {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
@@ -86,10 +82,6 @@
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dashboard.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",

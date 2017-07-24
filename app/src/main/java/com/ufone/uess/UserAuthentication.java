@@ -8,6 +8,9 @@ import android.util.Log;
 
 public class UserAuthentication {
     public static boolean authenticate() {
+        if(StorageController.readFloat("lastCallTime") == 0.0f) {
+            return false;
+        }
         float lastCallTime = StorageController.readFloat("lastCallTime");
         Log.d("LastCallTime", String.valueOf(lastCallTime));
         float temp = System.currentTimeMillis() - lastCallTime;
@@ -16,5 +19,12 @@ public class UserAuthentication {
             return true;
         else
             return false;
+    }
+
+    public static boolean unauthenticate() {
+        StorageController.remove("lastCallTime");
+        StorageController.remove("Emp_No");
+        StorageController.remove("AD_Name");
+        return true;
     }
 }
