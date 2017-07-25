@@ -66,7 +66,7 @@ public class LoginActivity extends Activity implements AsyncResponse {
         loggingText.setVisibility(View.VISIBLE);
         mLoginFormView.setVisibility(View.GONE);
         if(UserAuthentication.authenticate())
-            startActivity(new Intent(LoginActivity.this, MainDashboardActivity.class));
+            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
         else {
             progressBar.setVisibility(View.GONE);
             loggingText.setText("Logging In");
@@ -79,7 +79,7 @@ public class LoginActivity extends Activity implements AsyncResponse {
     public void onResume() {
         super.onResume();
         if(UserAuthentication.authenticate())
-            startActivity(new Intent(LoginActivity.this, MainDashboardActivity.class));
+            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
     }
 
 
@@ -182,7 +182,7 @@ public class LoginActivity extends Activity implements AsyncResponse {
                 e.printStackTrace();
             }
             finish();
-            startActivity(new Intent(LoginActivity.this, MainDashboardActivity.class));
+            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
         }
         else {
             progressBar.setVisibility(View.GONE);

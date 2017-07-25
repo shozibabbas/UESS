@@ -4,15 +4,10 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.text.Html;
 import android.text.SpannableString;
-import android.text.method.ScrollingMovementMethod;
 import android.text.style.UnderlineSpan;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -21,13 +16,11 @@ import android.widget.Toast;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class EmployeeProfileActivity extends Activity implements AsyncResponse {
@@ -123,7 +116,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
 
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(EmployeeProfileActivity.this, MainDashboardActivity.class));
+        startActivity(new Intent(EmployeeProfileActivity.this, DashboardActivity.class));
         finish();
     }
 
@@ -190,7 +183,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
     }
 
     public void backButton(View v) {
-        startActivity(new Intent(EmployeeProfileActivity.this, MainDashboardActivity.class));
+        startActivity(new Intent(EmployeeProfileActivity.this, DashboardActivity.class));
         finish();
     }
 

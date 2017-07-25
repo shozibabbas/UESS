@@ -7,11 +7,9 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -110,7 +108,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                 JSONObject jObject = ja.getJSONObject(i);
                 Iterator<?> keys = jObject.keys();
 
-                ArrayList<Integer> colors = colorArray.get(color % 4);
+                ArrayList<Integer> colors = colorArray.get(color % 1);
 
                 int palette = 0;
 
@@ -177,13 +175,13 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
     }
 
     public void backButton(View v) {
-        startActivity(new Intent(LeaveBalanceActivity.this, MainDashboardActivity.class));
+        startActivity(new Intent(LeaveBalanceActivity.this, DashboardActivity.class));
         finish();
     }
 
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(LeaveBalanceActivity.this, MainDashboardActivity.class));
+        startActivity(new Intent(LeaveBalanceActivity.this, DashboardActivity.class));
         finish();
     }
 }

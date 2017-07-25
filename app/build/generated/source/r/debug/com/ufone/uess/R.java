@@ -2271,7 +2271,7 @@ containing a value of this type.
         public static final int activity_leave_balance=0x7f03001a;
         public static final int activity_login=0x7f03001b;
         public static final int activity_main=0x7f03001c;
-        public static final int activity_main_dashboard=0x7f03001d;
+        public static final int activity_dashboard =0x7f03001d;
         public static final int notification_media_action=0x7f03001e;
         public static final int notification_media_cancel_action=0x7f03001f;
         public static final int notification_template_big_media=0x7f030020;
@@ -2354,6 +2354,11 @@ containing a value of this type.
         public static final int Animation_AppCompat_DropDownUp=0x7f08008b;
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
          */
         public static final int AppBaseTheme=0x7f08000b;
         public static final int AppTheme=0x7f080037;

@@ -5,27 +5,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainDashboardActivity extends Activity {
+public class DashboardActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_dashboard);
+        setContentView(R.layout.activity_dashboard);
 
         // authentication
         if(!UserAuthentication.authenticate()) {
-            startActivity(new Intent(MainDashboardActivity.this, LoginActivity.class));
+            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
             finish();
         }
     }
 
     public void openEmployeeProfile(View v) {
-        startActivity(new Intent(MainDashboardActivity.this, EmployeeProfileActivity.class));
+        startActivity(new Intent(DashboardActivity.this, EmployeeProfileActivity.class));
         finish();
     }
 
     public void openLeaveBalance(View v) {
-        startActivity(new Intent(MainDashboardActivity.this, LeaveBalanceActivity.class));
+        startActivity(new Intent(DashboardActivity.this, LeaveBalanceActivity.class));
         finish();
     }
 
@@ -37,7 +37,7 @@ public class MainDashboardActivity extends Activity {
         }
         else {
             finish();
-            startActivity(new Intent(MainDashboardActivity.this, LoginActivity.class));
+            startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
         }
 
     }
