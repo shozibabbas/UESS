@@ -37,10 +37,11 @@
             android:name="com.ufone.uess.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
-            android:name="com.ufone.uess.MainDashboardActivity"
+            android:name="com.ufone.uess.DashboardActivity"
             android:screenOrientation="portrait" />
         <activity android:name="com.ufone.uess.EmployeeProfileActivity" />
         <activity android:name="com.ufone.uess.LeaveBalanceActivity" />
+        <activity android:name="com.ufone.uess.ProvidentFundBalanceActivity" />
     </application>
 
 </manifest>
