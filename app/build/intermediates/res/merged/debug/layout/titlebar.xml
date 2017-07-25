@@ -7,9 +7,9 @@
     android:elevation="5dp">
 
     <TableRow
+        android:id="@+id/trTitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/holo_orange_dark">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/titlebarBackBtn"
@@ -43,6 +43,21 @@
             android:onClick="backPress"
             android:padding="16dp"
             android:src="@android:drawable/ic_lock_power_off" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBarMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:layout_weight="0.06"
+            android:padding="8dp"
+            android:visibility="visible" />
 
     </TableRow>
 

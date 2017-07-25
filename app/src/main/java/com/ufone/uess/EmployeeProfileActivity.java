@@ -54,7 +54,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         if(!UserAuthentication.authenticate())
             startActivity(new Intent(EmployeeProfileActivity.this, LoginActivity.class));
 
-        e_p_ProgressBar = (ProgressBar) findViewById(R.id.e_p_ProgressBar);
+        e_p_ProgressBar = (ProgressBar) findViewById(R.id.progressBarMain);
         e_p_EmpNo = (TextView) findViewById(R.id.e_p_EmpNo);
         e_p_NameView = (TextView) findViewById(R.id.e_p_NameView);
         e_p_Designation = (TextView) findViewById(R.id.e_p_Designation);

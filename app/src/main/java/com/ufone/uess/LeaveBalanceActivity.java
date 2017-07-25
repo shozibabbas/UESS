@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -33,7 +34,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leave_balance);
 
-        ((TextView) findViewById(R.id.titlebarTitle)).setText("Leave Balance");
+        ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.leaveBalance);
 
         AsyncDataFetcher df =new AsyncDataFetcher();
         df.delegate = this;
@@ -103,7 +104,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
             JSONArray ja = new JSONArray(output);
 
             int color = 0;
-
+            ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
             for(int i = 0; i < ja.length(); i++) {
                 JSONObject jObject = ja.getJSONObject(i);
                 Iterator<?> keys = jObject.keys();

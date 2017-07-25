@@ -12,6 +12,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
@@ -30,12 +31,27 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		StorageController.setSharedPref(getPreferences(Context.MODE_PRIVATE));
-		startActivity(new Intent(MainActivity.this, LoginActivity.class));
-		finish();
-	}
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                finish();
+            }
+        }, 2000);
+        //try {
+        //	Thread.sleep(5000);
+        //} catch (InterruptedException e) {
+        //	e.printStackTrace();
+        //}
+        //startActivity(new Intent(MainActivity.this, LoginActivity.class));
+        //finish();
+    }
 
 	public void loginBtnClick(View v) {
-		startActivity(new Intent(MainActivity.this, LoginActivity.class));
+
+        startActivity(new Intent(MainActivity.this, LoginActivity.class));
 		finish();
 	}
 }

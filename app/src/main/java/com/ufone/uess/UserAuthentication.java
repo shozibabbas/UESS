@@ -15,7 +15,7 @@ public class UserAuthentication {
         Log.d("LastCallTime", String.valueOf(lastCallTime));
         float temp = System.currentTimeMillis() - lastCallTime;
         Log.d("UserAuthNew", String.valueOf(temp));
-        if(temp < 50000)
+        if (temp < 500000) // timeout of 50 seconds
             return true;
         else
             return false;

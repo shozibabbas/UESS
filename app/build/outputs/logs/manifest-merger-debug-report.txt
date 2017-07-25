@@ -76,7 +76,7 @@ MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\.andr
 	android:allowBackup
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:23:9-35
 	android:icon
-		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:24:9-45
+		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:24:9-48
 	android:theme
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:26:9-40
 activity#com.ufone.uess.MainActivity
