@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml
@@ -65,7 +65,7 @@ ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:20:22-69
 application
-ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:22:5-45:19
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:22:5-46:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sayyed.shozib\.android\build-cache\8ab6e931c64945db293ab9d906e74a3fe12b3538\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\7eee190ee0abde9a72e11012c0f78ca6c1c61775\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\d74ebd5cbc1590b08261e2671e2f10fdbf75dd9b\output\AndroidManifest.xml:7:5-20
@@ -116,6 +116,10 @@ ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:43:19-55
 activity#com.ufone.uess.ProvidentFundBalanceActivity
-ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:44:9-75
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:44:9-66
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:44:19-63
+activity#com.ufone.uess.MedicalServiceActivity
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:45:9-69
+	android:name
+		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:45:19-57

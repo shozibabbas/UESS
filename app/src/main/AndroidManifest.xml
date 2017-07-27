@@ -41,7 +41,8 @@
             android:screenOrientation="portrait" />
         <activity android:name=".EmployeeProfileActivity" />
         <activity android:name=".LeaveBalanceActivity" />
-        <activity android:name=".ProvidentFundBalanceActivity"></activity>
+        <activity android:name=".ProvidentFundBalanceActivity" />
+        <activity android:name=".MedicalServiceActivity"></activity>
     </application>
 
 </manifest>
