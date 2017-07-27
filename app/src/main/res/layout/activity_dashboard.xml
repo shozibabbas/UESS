@@ -132,6 +132,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/mainmenubutton"
                         android:drawableTop="@drawable/paymenthistory"
+                        android:onClick="openMedicalService"
                         android:padding="20dp"
                         android:text="Payments and Reductions"
                         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"

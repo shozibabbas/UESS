@@ -42,6 +42,11 @@ public class DashboardActivity extends Activity {
         finish();
     }
 
+    public void openMedicalService(View v) {
+        startActivity(new Intent(DashboardActivity.this, MedicalServiceActivity.class));
+        finish();
+    }
+
     // creating sign out box
     public void backPress(View v) {
         AlertDialog.Builder builder;
