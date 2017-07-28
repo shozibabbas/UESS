@@ -1,29 +1,111 @@
 package com.ufone.uess;
 
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.reflect.Array;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
 public class MedicalServiceActivity extends Activity {
 
-    public static final String s = "{\n  \"region\": {\n    \"north\": {\n      \"name\": \"North\",\n      \"cities\": {\n        \"islamabad\": {\n          \"name\": \"Islamabad\",\n          \"hospitals\": {\n            \"aeh\": {\n              \"name\": \"Amanat Eye Hospital\",\n              \"id\": \"AI\"\n            },\n            \"ki\": {\n              \"name\": \"Kulsoom International\",\n              \"id\": \"KI\"\n            },\n            \"idccc\": {\n              \"name\": \"Islamabad Diagnostic Center ChandniChowk\",\n              \"id\": \"IC\"\n            },\n            \"idcg11\": {\n              \"name\": \"Islamabad Diagnostic Center G11 Markaz\",\n              \"id\": \"IE\"\n            },\n            \"idcf8m\": {\n              \"name\": \"Islamabad Diagnostic Center F8 Markaz\",\n              \"id\": \"IF\"\n            },\n            \"idcg8m\": {\n              \"name\": \"Islamabad Diagnostic Center G8 Markaz\",\n              \"id\": \"IG\"\n            },\n            \"idcg9m\": {\n              \"name\": \"Islamabad Diagnostic Center G9 Markaz\",\n              \"id\": \"IN\"\n            },\n            \"idcpwd\": {\n              \"name\": \"Islamabad Diagnostic Center PWD\",\n              \"id\": \"IP\"\n            },\n            \"mi\": {\n              \"name\": \"MEDICSI\",\n              \"id\": \"MD\"\n            },\n            \"mih\": {\n              \"name\": \"Maroof International Hospital\",\n              \"id\": \"MI\"\n            },\n            \"mmh\": {\n              \"name\": \"Maryam Memorial Hospital\",\n              \"id\": \"MM\"\n            },\n            \"pdc\": {\n              \"name\": \"PAK Diagnostic Center\",\n              \"id\": \"PD\"\n            },\n            \"qaih\": {\n              \"name\": \"Quaid-e-Azam Int. Hospital\",\n              \"id\": \"QI\"\n            },\n            \"sih\": {\n              \"name\": \"Shifa International Hospital\",\n              \"id\": \"SI\"\n            }\n          }\n        },\n        \"wahcantt\": {\n          \"name\": \"Wah Cantt\",\n          \"hospitals\": {\n            \"idcwc\": {\n              \"name\": \"Islamabad Diagnostic Center Wah Cantt\",\n              \"id\": \"IW\"\n            }\n          }\n        },\n        \"peshawar\": {\n          \"name\": \"Peshawar\",\n          \"hospitals\": {\n            \"nwgh\": {\n              \"name\": \"NorthWest General Hospital\",\n              \"id\": \"NW\"  \n            },\n            \"rmih\": {\n              \"name\": \"Rehman Medical Institute Hospital\",\n              \"id\": \"RM\"  \n            }\n          },\n        \"rawalpindi\": {\n          \"name\": \"Rawalpindi\",\n          \"hospitals\": {\n            \"aeh\": {\n              \"name\": \"Amanat Eye Hospital\",\n              \"id\": \"AR\"\n            },\n            \"bih\": {\n              \"name\": \"Bahria International Hospital RWP & OPD\",\n              \"id\": \"BI\"\n            },\n            \"mmh\": {\n              \"name\": \"Maryam Memorial Hospital\",\n              \"id\": \"MR\"\n            },\n            \"rh\": {\n              \"name\": \"Reliance Hospital\",\n              \"id\": \"RH\"\n            }\n          }\n        },\n        \"abbotabad\": {\n          \"name\": \"Abbotabad\",\n          \"hospitals\": {\n            \"jih\": {\n              \"name\": \"Jinnah International Hospital\",\n              \"id\": \"JI\"\n            }\n          }\n        }\n      }\n    }\n  },\n    \"central\": {\n      \"name\": \"Central\",\n      \"cities\": {\n        \"sahiwal\": {\n          \"name\": \"Sahiwal\",\n          \"hospitals\": {\n            \"qh\": {\n              \"name\": \"Qureshi Hospital\",\n              \"id\": \"QH\"\n            }\n          }\n        },\n        \"rahimyarkhan\": {\n          \"name\": \"Rahim Yar Khan\",\n          \"hospitals\": {\n            \"asmc\": {\n              \"name\": \"Al-Saeed Medical Complex\",\n              \"id\": \"SM\"\n            }\n          }\n        },\n        \"multan\": {\n          \"name\": \"Multan\",\n          \"hospitals\": {\n            \"ch\": {\n              \"name\": \"City Hospital\",\n              \"id\": \"CH\"\n            },\n            \"mch\": {\n              \"name\": \"Medicare Hospital\",\n              \"id\": \"MC\"\n            }\n          }\n        },\n        \"faisalabad\": {\n          \"name\": \"Faisalabad\",\n          \"hospitals\": {\n            \"pch\": {\n              \"name\": \"Prime Care Hospital\",\n              \"id\": \"PC\"\n            },\n            \"sih\": {\n              \"name\": \"Shifa International Hospital\",\n              \"id\": \"SF\"\n            }\n          }\n        },\n        \"lahore\": {\n          \"name\": \"Lahore\",\n          \"hospitals\": {\n            \"arh\": {\n              \"name\": \"Al-Razi Hospital\",\n              \"id\": \"AH\"\n            },\n            \"bih\": {\n              \"name\": \"Bahria International Hospital\",\n              \"id\": \"BL\"\n            },\n            \"mch\": {\n              \"name\": \"Mid-City Hospital\",\n              \"id\": \"MH\"\n            },\n            \"nec\": {\n              \"name\": \"National Eye Center\",\n              \"id\": \"NE\"\n            },\n            \"skh\": {\n              \"name\": \"Shaukat Khannum Hospital\",\n              \"id\": \"SK\"\n            }\n          }\n        },\n        \"gujranwala\": {},\n        \"sialkot\": {\n          \"name\": \"Sialkot\",\n          \"hospitals\": {\n            \"kmh\": {\n              \"name\": \"Khalida Memorial Hospital\",\n              \"id\": \"KM\"\n            }\n          }\n        },\n        \"sargodha\": {\n          \"name\": \"Sargodha\",\n          \"hospitals\": {\n            \"msnmc\": {\n              \"name\": \"M/S Niazi Medical Complex\",\n              \"id\": \"NM\"\n            }\n          }\n        }\n      }\n    },\n    \"south\": {\n      \"name\": \"South\",\n      \"cities\": {\n        \"karachi\": {\n          \"name\": \"Karachi\",\n          \"hospitals\": {\n            \"akuh\": {\n              \"name\": \"Agha Khan University Hospital\",\n              \"id\": \"AK\"\n            },\n            \"sch\": {\n              \"name\": \"South City Hospital\",\n              \"id\": \"SC\"\n            },\n            \"thi\": {\n              \"name\": \"Tabba Medical Institute\",\n              \"id\": \"TH\"\n            },\n            \"dzhc\": {\n              \"name\": \"Dr.Ziauddin Hospital Clifton\",\n              \"id\": \"ZC\"\n            },\n            \"dzhk\": {\n              \"name\": \"Dr.Ziauddin Hospital Kemari\",\n              \"id\": \"ZK\"\n            },\n            \"dzhn\": {\n              \"name\": \"Dr.Ziauddin Hospital Nazimabad\",\n              \"id\": \"ZN\"\n            }\n          }\n        }\n      }\n    }\n  }\n}";
+    //private static final String objUrl = "http://172.16.105.190/hospitalsList.txt";
+    private static final String objUrl = "http://cyberdev.me/hospitalslist.json";
+
+    String[] languages = {"C", "C++", "Java", "C#", "PHP", "JavaScript", "jQuery", "AJAX", "JSON"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medical_service);
-        ((TextView) findViewById(R.id.textView2)).setText("Hello");
-        JSONObject jo = new JSONObject();
-        try {
-            jo = new JSONObject(s);
 
-        } catch (JSONException e) {
-            e.printStackTrace();
+
+        MyAsyncTask tsk = new MyAsyncTask();
+        tsk.execute();
+    }
+
+    class MyAsyncTask extends AsyncTask<String, String, String> implements AdapterView.OnItemSelectedListener {
+
+
+        @Override
+        protected String doInBackground(String... params) {
+            String result = null;
+            try {
+                URL url = new URL(objUrl);
+                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+                InputStream in = new BufferedInputStream(urlConnection.getInputStream());
+                Scanner s = new Scanner(in).useDelimiter("\\A");
+                result = s.next();
+                urlConnection.disconnect();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return result;
         }
-        ((TextView) findViewById(R.id.textView2)).setText(jo.toString());
 
+        @Override
+        protected void onPostExecute(String result) {
+            ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
+
+            try {
+                JSONObject jo = new JSONObject(result);
+                ArrayList<String> names = new ArrayList<>();
+                names.add("Select Region");
+                JSONObject regions = jo.getJSONObject("region");
+                Iterator<?> keys = regions.keys();
+                while (keys.hasNext()) {
+                    String key = (String) keys.next();
+                    names.add(regions.getJSONObject(key).get("name").toString());
+                }
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(MedicalServiceActivity.this, android.R.layout.select_dialog_item, names.toArray(new String[0]));
+                Spinner spnr = (Spinner) findViewById(R.id.spinner);
+                spnr.setOnItemSelectedListener(this);
+                spnr.setAdapter(adapter);
+                //AutoCompleteTextView acTextView = (AutoCompleteTextView) findViewById(R.id.languages);
+                //acTextView.setThreshold(1);
+                //acTextView.setAdapter(adapter);
+            } catch (Exception e) {
+                ((TextView) findViewById(R.id.textView3)).setText(e.toString());
+            }
+        }
+
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int pos, long l) {
+            switch (pos) {
+                case 0:
+                    Toast.makeText(parent.getContext(), "Nothing Selected", Toast.LENGTH_SHORT).show();
+                    break;
+                default:
+                    Toast.makeText(parent.getContext(), "OnItemSelectedListener : " + parent.getItemAtPosition(pos).toString(), Toast.LENGTH_SHORT).show();
+                    break;
+            }
+
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> adapterView) {
+
+        }
     }
 }

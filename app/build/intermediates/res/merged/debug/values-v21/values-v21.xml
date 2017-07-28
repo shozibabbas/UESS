@@ -6,12 +6,14 @@
         <item name="android:colorPrimaryDark">@color/orange_extra_dark</item>
         <item name="android:colorAccent">@android:color/holo_orange_dark</item>
         <item name="android:colorPrimary">@android:color/holo_orange_dark</item>
-        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowBackground">@color/material_dark_color</item>
         <item name="android:textColorPrimary">@color/primary_text_color</item>
-        <item name="android:textColorSecondary">@color/material_dark_color</item>
-        <item name="android:textColorSecondaryInverse">@color/material_dark_color</item>
-        <item name="android:textColorPrimaryInverse">@color/material_dark_color</item>
-        <item name="android:colorForeground">@color/material_dark_color</item>
+        <item name="android:textColorSecondary">@color/primary_text_color</item>
+        <item name="android:textColorSecondaryInverse">@color/primary_text_color</item>
+        <item name="android:textColorPrimaryInverse">@color/primary_text_color</item>
+        <item name="android:colorForeground">@color/primary_text_color</item>
+        <item name="colorAccent">?android:attr/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/primary_text_color</item>
     </style>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>

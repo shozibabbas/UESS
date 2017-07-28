@@ -141,7 +141,6 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                     valueTv.setLayoutParams(new TableRow.LayoutParams(1));
 
                     String key = (String)keys.next();
-                    //keyTv.append("\n" + assocArray.get(key) + " : " + jObject.get(key));
                     keyTv.setText(assocArray.get(key));
 
                     if(key.equals("Leave_Type"))

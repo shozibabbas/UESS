@@ -63,4 +63,10 @@
     <string name="endDate">End Date</string>
     <string name="netFund">Net Fund</string>
 
+    <!-- Medical Service Screen -->
+    <string name="regionName">Region</string>
+    <string name="cityName">City</string>
+    <string name="hospName">Hospital</string>
+    <string name="screenBtn">Get Details</string>
+
 </resources>
