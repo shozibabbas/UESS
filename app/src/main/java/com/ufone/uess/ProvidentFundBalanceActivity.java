@@ -53,7 +53,11 @@ public class ProvidentFundBalanceActivity extends Activity implements AsyncRespo
         m.put("key", StorageController.readString("Emp_No"));
         m.put("emp_no", "885");
         df.setRequestParams(m);
-        df.execute();
+        try {
+            df.execute();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "Error: " + e.toString(), Toast.LENGTH_LONG).show();
+        }
     }
 
     // creating sign out box
@@ -82,6 +86,10 @@ public class ProvidentFundBalanceActivity extends Activity implements AsyncRespo
 
     @Override
     public void processFinish(String output) {
+        if (output.equals("")) {
+            Toast.makeText(getApplicationContext(), "Error: Cannot fetch data", Toast.LENGTH_LONG).show();
+            return;
+        }
         ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
         ((TableLayout) findViewById(R.id.p_f_b_Container)).setVisibility(View.VISIBLE);
 

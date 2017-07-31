@@ -49,26 +49,21 @@ public class AsyncDataFetcher extends AsyncTask<String, String, String> {
 
     @Override
     protected String doInBackground(String... params) {
-        try {
-            Connection connection = new Connection(requestPath);
-            if(requestParams != null)
+        Connection connection = new Connection(requestPath);
+        if (requestParams != null)
 
-                // for adding parameters to the connection
-                for (Map.Entry<String, String> entry : requestParams.entrySet())
-                {
-                    connection.addProperties(entry.getKey(), entry.getValue());
-                }
-            connection.connectForSingleNode(); // making connection and retrieving results
-            SoapObject soapObject = connection.Result();
-
-            String result = soapObject.getPropertyAsString(responsePath);
-            return result;
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+            // for adding parameters to the connection
+            for (Map.Entry<String, String> entry : requestParams.entrySet()) {
+                connection.addProperties(entry.getKey(), entry.getValue());
+            }
+        connection.connectForSingleNode(); // making connection and retrieving results
+        SoapObject soapObject = connection.Result();
+        String result = null;
+        if (soapObject == null)
+            result = "";
+        else
+            result = soapObject.getPropertyAsString(responsePath);
+        return result;
     }
 
     @Override

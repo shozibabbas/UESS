@@ -164,6 +164,13 @@ public class LoginActivity extends Activity implements AsyncResponse {
 
     @Override
     public void processFinish(String output) {
+        if (output.equals("")) {
+            Toast.makeText(getApplicationContext(), "Error establishing connection", Toast.LENGTH_LONG).show();
+            progressBar.setVisibility(View.GONE);
+            loggingText.setVisibility(View.GONE);
+            mLoginFormView.setVisibility(View.VISIBLE);
+            return;
+        }
         String response = output;
         JSONArray responseArray = null;
         if(!response.contains("failure")) {

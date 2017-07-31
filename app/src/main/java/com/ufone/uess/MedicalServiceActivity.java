@@ -65,7 +65,11 @@ public class MedicalServiceActivity extends Activity {
         hospitalSpinner = (Spinner) findViewById(R.id.hospitalSpinner);
 
         MyAsyncTask tsk = new MyAsyncTask();
-        tsk.execute();
+        try {
+            tsk.execute();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "Error: " + e.toString(), Toast.LENGTH_LONG).show();
+        }
     }
 
     public void requestMS(View v) throws Exception {
@@ -146,6 +150,11 @@ public class MedicalServiceActivity extends Activity {
 
         @Override
         protected void onPostExecute(String result) {
+            if (result.equals("")) {
+                Toast.makeText(getApplicationContext(), "Error: Cannot fetch data", Toast.LENGTH_LONG).show();
+                finish();
+                return;
+            }
             ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
 
             try {

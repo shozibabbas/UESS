@@ -87,7 +87,11 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         m.put("key", StorageController.readString("Emp_No"));
         m.put("emp_no", "885");
         df.setRequestParams(m);
-        df.execute();
+        try {
+            df.execute();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "Error: " + e.toString(), Toast.LENGTH_LONG).show();
+        }
     }
 
     // function for displaying the sign out box when the user clicks sign out button
@@ -123,6 +127,11 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
     //this override the implemented method from asyncTask
     @Override
     public void processFinish(String output){
+        if (output.equals("")) {
+            Toast.makeText(getApplicationContext(), "Error: Cannot fetch data", Toast.LENGTH_LONG).show();
+            finish();
+            return;
+        } else
         try {
             ((ScrollView) findViewById(R.id.sv)).setVisibility(View.VISIBLE);
             JSONObject response = ((JSONArray) new JSONArray(output)).getJSONObject(0);

@@ -11,7 +11,7 @@
         <item name="android:textColorSecondary">@color/primary_text_color</item>
         <item name="android:textColorSecondaryInverse">@color/primary_text_color</item>
         <item name="android:textColorPrimaryInverse">@color/primary_text_color</item>
-        <item name="android:colorForeground">@color/primary_text_color</item>
+        <item name="android:colorForeground">@color/material_dark_color</item>
         <item name="colorAccent">?android:attr/colorPrimaryDark</item>
         <item name="colorPrimary">@color/primary_text_color</item>
     </style>

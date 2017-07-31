@@ -48,7 +48,11 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
         m.put("key", StorageController.readString("Emp_No"));
         m.put("emp_no", "885");
         df.setRequestParams(m);
-        df.execute();
+        try {
+            df.execute();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "Error: " + e.toString(), Toast.LENGTH_LONG).show();
+        }
     }
 
     // creating sign out box
@@ -77,6 +81,11 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
 
     @Override
     public void processFinish(String output) {
+        if (output.equals("")) {
+            Toast.makeText(getApplicationContext(), "Error: Cannot fetch data", Toast.LENGTH_LONG).show();
+            finish();
+            return;
+        }
         Map<String, String> assocArray = new HashMap<String, String>();
         assocArray.put("Start_Date", "Start Date");
         assocArray.put("End_Date", "End Date");
