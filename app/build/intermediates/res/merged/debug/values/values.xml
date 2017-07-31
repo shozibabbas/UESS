@@ -133,6 +133,8 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
+    <color name="green_click">#ff00bb00</color>
+    <color name="green_hover">#ff009900</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
@@ -153,6 +155,7 @@
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
     <color name="orange_extra_dark">#f17a0a</color>
+    <color name="orange_extra_dark_disabled">#999999</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -353,6 +356,9 @@
     <string name="hospName">Hospital</string>
     <string name="lbDate">Session</string>
     <string name="leaveBalance">Leave Balance</string>
+    <string name="medicalServiceRecord">Medical Service</string>
+    <string name="mssReset">Reset</string>
+    <string name="mssSubmit">Check Now</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="netFund">Net Fund</string>
@@ -364,7 +370,6 @@
     <string name="providentFundBalance">Provident Fund Balance</string>
     <string name="regionName">Region</string>
     <string name="screenBtn">Get Details</string>
-    <string name="settings">Settings</string>
     <string name="startDate">Start Date</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_dashboard">Dashboard</string>
@@ -377,15 +382,11 @@
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
     <style name="AppBaseTheme" parent="android:Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
 
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
 
         <item name="android:colorForeground">@color/primary_text_color</item>
         <item name="android:colorBackground">@android:color/background_light</item>

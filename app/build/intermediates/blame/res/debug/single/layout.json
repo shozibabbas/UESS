@@ -140,6 +140,10 @@
         "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item.xml",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
         "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },

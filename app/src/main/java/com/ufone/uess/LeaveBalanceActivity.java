@@ -36,6 +36,10 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
 
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.leaveBalance);
 
+        // user authentication
+        if (!UserAuthentication.authenticate())
+            startActivity(new Intent(LeaveBalanceActivity.this, LoginActivity.class));
+
         AsyncDataFetcher df =new AsyncDataFetcher();
         df.delegate = this;
         df.setRequestPath("GetEmpLeaves");

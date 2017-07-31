@@ -11,15 +11,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <ImageButton
             android:id="@+id/titlebarBackBtn"
+            style="@style/Widget.AppCompat.ImageButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_column="0"
             android:background="@drawable/orange_button"
-            android:drawableStart="?android:attr/actionModeCloseDrawable"
             android:onClick="backButton"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:src="?android:attr/actionModeCloseDrawable"
+            android:tint="@color/material_dark_color" />
 
         <TextView
             android:id="@+id/titlebarTitle"
@@ -42,7 +44,8 @@
             android:background="@drawable/orange_button"
             android:onClick="backPress"
             android:padding="16dp"
-            android:src="@android:drawable/ic_lock_power_off" />
+            android:src="@android:drawable/ic_lock_power_off"
+            android:tint="@color/material_dark_color" />
 
     </TableRow>
 

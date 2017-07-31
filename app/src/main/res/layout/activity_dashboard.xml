@@ -131,10 +131,10 @@
                         android:layout_marginTop="4dp"
                         android:layout_weight="1"
                         android:background="@drawable/mainmenubutton"
-                        android:drawableTop="@drawable/paymenthistory"
+                        android:drawableTop="@drawable/medical"
                         android:onClick="openMedicalService"
                         android:padding="20dp"
-                        android:text="Payments and Reductions"
+                        android:text="@string/medicalServiceRecord"
                         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
                         android:textColor="#ddffffff" />
                 </TableRow>

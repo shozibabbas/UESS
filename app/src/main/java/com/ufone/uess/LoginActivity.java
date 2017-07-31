@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -138,7 +139,11 @@ public class LoginActivity extends Activity implements AsyncResponse {
             m.put("username", email);
             m.put("pwd", password);
             df.setRequestParams(m);
-            df.execute();
+            try {
+                df.execute();
+            } catch (Exception e) {
+                Toast.makeText(getApplicationContext(), "Error: " + e.toString(), Toast.LENGTH_LONG).show();
+            }
         }
     }
 

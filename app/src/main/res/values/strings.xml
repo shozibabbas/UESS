@@ -40,7 +40,7 @@
     <string name="empProfile">Employee Profile</string>
     <string name="leaveBalance">Leave Balance</string>
     <string name="providentFundBalance">Provident Fund Balance</string>
-    <string name="settings">Settings</string>
+    <string name="medicalServiceRecord">Medical Service</string>
 
     <!-- Joining date labels -->
     <string name="empJoiningDate">Joining Date</string>
@@ -68,5 +68,8 @@
     <string name="cityName">City</string>
     <string name="hospName">Hospital</string>
     <string name="screenBtn">Get Details</string>
+
+    <string name="mssSubmit">Check Now</string>
+    <string name="mssReset">Reset</string>
 
 </resources>

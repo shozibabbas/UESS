@@ -37,6 +37,10 @@ public class ProvidentFundBalanceActivity extends Activity implements AsyncRespo
         setContentView(R.layout.activity_provident_fund_balance);
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.providentFundBalance);
 
+        // user authentication
+        if (!UserAuthentication.authenticate())
+            startActivity(new Intent(ProvidentFundBalanceActivity.this, LoginActivity.class));
+
         p_f_b_ProvFund = (TextView) findViewById(R.id.p_f_b_ProvFund);
         p_f_b_StartDate = (TextView) findViewById(R.id.p_f_b_StartDate);
         p_f_b_EndDate = (TextView) findViewById(R.id.p_f_b_EndDate);
