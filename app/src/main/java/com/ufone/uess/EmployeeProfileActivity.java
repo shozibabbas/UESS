@@ -5,13 +5,10 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.style.UnderlineSpan;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.ScrollView;
+import android.widget.RelativeLayout;
 import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,36 +41,19 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
     TextView e_p_LineManager;
     TextView e_p_Department;
     TextView e_p_SubDepartment;
+    LinearLayout e_p_Container;
     AlertDialog signoutAlert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_employee_profile_1);
+        setContentView(R.layout.activity_employee_profile);
 
-        TabHost tabHost = null;
-        TabHost host = (TabHost) findViewById(R.id.tabHost);
-        host.setup();
-
-        //Tab 1
-        TabHost.TabSpec spec = host.newTabSpec("Tab One");
-        spec.setContent(R.id.tab1);
-        spec.setIndicator("Organization", getResources().getDrawable(R.drawable.organization));
-        host.addTab(spec);
-
-        //Tab 2
-        spec = host.newTabSpec("Tab Two");
-        spec.setContent(R.id.tab2);
-        spec.setIndicator("Personal", getResources().getDrawable(R.drawable.persona));
-        host.addTab(spec);
-
-
-        //((TextView) findViewById(R.id.titlebarTitle)).setText("Employee Profile");
-
-        user authentication
+        //user authentication
         if(!UserAuthentication.authenticate())
             startActivity(new Intent(EmployeeProfileActivity.this, LoginActivity.class));
 
+        e_p_Container = (LinearLayout) findViewById(R.id.e_p_Container);
         e_p_ProgressBar = (ProgressBar) findViewById(R.id.progressBarMain);
         e_p_EmpNo = (TextView) findViewById(R.id.e_p_EmpNo);
         e_p_NameView = (TextView) findViewById(R.id.e_p_NameView);
@@ -91,12 +71,26 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         e_p_Department = (TextView) findViewById(R.id.e_p_Department);
         e_p_SubDepartment = (TextView) findViewById(R.id.e_p_SubDepartment);
 
+        TabHost tabHost = null;
+        TabHost host = (TabHost) findViewById(R.id.tabHost);
+        host.setup();
+        //Tab 1
+        TabHost.TabSpec spec = host.newTabSpec("Tab One");
+        spec.setContent(R.id.tab1);
+        spec.setIndicator("Organization");
+        host.addTab(spec);
+        //Tab 2
+        spec = host.newTabSpec("Tab Two");
+        spec.setContent(R.id.tab2);
+        spec.setIndicator("Personal");
+        host.addTab(spec);
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
         builder.setMessage("Are you sure?")
                 .setTitle("This is some title");
         signoutAlert = builder.create();
 
-        //e_p_ProgressBar.setVisibility(View.VISIBLE);
+        e_p_ProgressBar.setVisibility(View.VISIBLE);
 
         // data request
         AsyncDataFetcher df =new AsyncDataFetcher();
@@ -127,6 +121,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
                         Intent intent = new Intent(EmployeeProfileActivity.this, LoginActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
+                        finish();
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -187,7 +182,9 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        //e_p_ProgressBar.setVisibility(View.GONE);
+        e_p_ProgressBar.setVisibility(View.GONE);
+        e_p_Container.setVisibility(View.VISIBLE);
+        ((RelativeLayout) findViewById(R.id.e_p_ProgressBarContainer)).setVisibility(View.GONE);
     }
 
     public void showHDateTo(View v) {

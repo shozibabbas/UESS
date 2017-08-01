@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-				startActivity(new Intent(MainActivity.this, EmployeeProfileActivity.class));
+				startActivity(new Intent(MainActivity.this, DashboardActivity.class));
 				finish();
             }
         }, 2000);
