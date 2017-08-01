@@ -29,8 +29,8 @@
             android:layout_height="match_parent"
             android:layout_column="1"
             android:layout_weight="1"
-            android:background="@android:color/holo_orange_dark"
-            android:gravity="center|start"
+            android:background="@color/mainorange"
+            android:gravity="center_vertical|center_horizontal|center"
             android:padding="16dp"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
             android:textColor="@android:color/background_light"
@@ -43,7 +43,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/orange_button"
             android:onClick="backPress"
-            android:padding="16dp"
+            android:padding="8dp"
             android:src="@android:drawable/ic_lock_power_off"
             android:tint="@color/material_dark_color" />
 

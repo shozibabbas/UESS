@@ -1,6 +1,46 @@
 [
     {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
         "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\38b0e776cd45d7af7a11dc1f1bcb89b312c422cf\\output\\res\\color-v23\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
     }
 ]

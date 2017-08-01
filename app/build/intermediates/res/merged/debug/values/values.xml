@@ -117,7 +117,7 @@
     <color name="bg_row_2_2">#ffcb00</color>
     <color name="bg_row_3_1">#ffffa9aa</color>
     <color name="bg_row_3_2">#ffffd5d6</color>
-    <color name="bg_row_4_1">#ff3eacff</color>
+    <color name="bg_row_4_1">#ffffff</color>
     <color name="bg_row_4_2">#ff93d1ff</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -139,8 +139,11 @@
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
-    <color name="mainmenubuttonbg">#ffffa900</color>
-    <color name="mainmenubuttonbg2">#FF78AD09</color>
+    <color name="maingreen">#9bba3b</color>
+    <color name="mainmenubuttonbg">#ffa900</color>
+    <color name="mainmenubuttonbg2">#78ad09</color>
+    <color name="mainorange">#f58220</color>
+    <color name="mainorangelight">#f79a4b</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -166,7 +169,7 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <color name="primary_text_material_light">#deffffff</color>
+    <color name="primary_text_material_light">#ffffff</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_color">#8a000000</color>
@@ -395,12 +398,13 @@
         <item name="android:colorForeground">@color/material_dark_color</item>
         <item name="android:colorBackground">@android:color/background_light</item>
         <item name="android:textColorPrimaryInverse">@color/primary_text_color</item>
-        <item name="android:textColorPrimary">@color/primary_text_color</item>
+        <item name="android:textColorPrimary">@color/mainorange</item>
         <item name="android:textColorSecondaryInverse">@color/primary_text_color</item>
         <item name="android:textColorSecondary">@color/primary_text_color</item>
         <item name="android:windowBackground">@color/material_dark_color</item>
-        <item name="colorAccent">@color/bg_row_2_1</item>
-        <item name="colorPrimary">@color/primary_text_color</item>
+        <item name="colorAccent">@color/mainorange</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="android:tabWidgetStyle">@color/maingreen</item>
     </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>

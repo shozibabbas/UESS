@@ -7,9 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
+import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -46,11 +49,28 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_employee_profile);
+        setContentView(R.layout.activity_employee_profile_1);
 
-        ((TextView) findViewById(R.id.titlebarTitle)).setText("Employee Profile");
+        TabHost tabHost = null;
+        TabHost host = (TabHost) findViewById(R.id.tabHost);
+        host.setup();
 
-        // user authentication
+        //Tab 1
+        TabHost.TabSpec spec = host.newTabSpec("Tab One");
+        spec.setContent(R.id.tab1);
+        spec.setIndicator("Organization", getResources().getDrawable(R.drawable.organization));
+        host.addTab(spec);
+
+        //Tab 2
+        spec = host.newTabSpec("Tab Two");
+        spec.setContent(R.id.tab2);
+        spec.setIndicator("Personal", getResources().getDrawable(R.drawable.persona));
+        host.addTab(spec);
+
+
+        //((TextView) findViewById(R.id.titlebarTitle)).setText("Employee Profile");
+
+        user authentication
         if(!UserAuthentication.authenticate())
             startActivity(new Intent(EmployeeProfileActivity.this, LoginActivity.class));
 
@@ -76,7 +96,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
                 .setTitle("This is some title");
         signoutAlert = builder.create();
 
-        e_p_ProgressBar.setVisibility(View.VISIBLE);
+        //e_p_ProgressBar.setVisibility(View.VISIBLE);
 
         // data request
         AsyncDataFetcher df =new AsyncDataFetcher();
@@ -133,12 +153,13 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
             return;
         } else
         try {
-            ((ScrollView) findViewById(R.id.sv)).setVisibility(View.VISIBLE);
+            //((ScrollView) findViewById(R.id.sv)).setVisibility(View.VISIBLE);
             JSONObject response = ((JSONArray) new JSONArray(output)).getJSONObject(0);
-            SpannableString uContent = new SpannableString("Emp # " + (Integer.parseInt(response.get("Emp_No").toString())));
-            uContent.setSpan(new UnderlineSpan(), 0, uContent.length(), 0);
-            e_p_EmpNo.setText(response.toString());
-            e_p_EmpNo.setText(uContent);
+            //SpannableString uContent = new SpannableString("Emp # " + (Integer.parseInt(response.get("Emp_No").toString())));
+            //uContent.setSpan(new UnderlineSpan(), 0, uContent.length(), 0);
+            //e_p_EmpNo.setText(response.toString());
+            //e_p_EmpNo.setText(uContent);
+            e_p_EmpNo.setText("" + (Integer.parseInt(response.get("Emp_No").toString())));
             e_p_NameView.setText(response.get("Name").toString());
             e_p_Designation.setText(response.get("Position_Title").toString() + ", " + response.get("Business_Unit").toString());
             //e_p_Location.setText("Human Resource, Technical, "+ response.get("Location").toString());
@@ -166,7 +187,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        e_p_ProgressBar.setVisibility(View.GONE);
+        //e_p_ProgressBar.setVisibility(View.GONE);
     }
 
     public void showHDateTo(View v) {

@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="mainmenubuttonbg">#ffffa900</color>
-    <color name="mainmenubuttonbg2">#FF78AD09</color>
-    <color name="primary_text_material_light">#deffffff</color>
+    <!-- company colors -->
+    <color name="mainorange">#f58220</color>
+    .
+    <color name="mainorangelight">#f79a4b</color>
+    <color name="maingreen">#9bba3b</color>
+
+    <color name="mainmenubuttonbg">#ffa900</color>
+    <color name="mainmenubuttonbg2">#78ad09</color>
+    <color name="primary_text_material_light">#ffffff</color>
     <color name="secondary_text_material_dark">#b3ffffff</color>
     <color name="secondary_text_material_light">#8affffff</color>
     <color name="material_dark_color">#ffffff</color>
@@ -14,7 +20,7 @@
     <color name="orange_extra_dark_disabled">#999999</color>
 
     <!-- backgrounds for alternating rows -->
-    <color name="bg_row_4_1">#ff3eacff</color>
+    <color name="bg_row_4_1">#ffffff</color>
     <color name="bg_row_4_2">#ff93d1ff</color>
     <color name="bg_row_2_1">#ffa900</color>
     <color name="bg_row_2_2">#ffcb00</color>
