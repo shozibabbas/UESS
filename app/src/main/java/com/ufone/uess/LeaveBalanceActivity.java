@@ -32,12 +32,12 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_leave_balance);
+        setContentView(R.layout.activity_leave_balance_1);
 
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.leaveBalance);
-        //((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
+        ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
 
-        // user authentication
+        /*// user authentication
         if (!UserAuthentication.authenticate())
             startActivity(new Intent(LeaveBalanceActivity.this, LoginActivity.class));
 
@@ -53,7 +53,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
             df.execute();
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(), "Error: " + e.toString(), Toast.LENGTH_LONG).show();
-        }
+        }*/
     }
 
     // creating sign out box

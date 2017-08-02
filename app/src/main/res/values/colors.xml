@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- company colors -->
-    <color name="mainorange">#f58220</color>
+    <color name="mainorange">#fff58220</color>
     .
     <color name="mainorangelight">#f79a4b</color>
     <color name="maingreen">#9bba3b</color>

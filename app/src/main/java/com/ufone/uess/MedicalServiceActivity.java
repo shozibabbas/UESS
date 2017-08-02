@@ -58,7 +58,7 @@ public class MedicalServiceActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medical_service);
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.medicalServiceRecord);
-        ((ImageButton) findViewById(R.id.titlebarSignOut)).setVisibility(View.VISIBLE);
+        ((TextView) findViewById(R.id.titlebarDownloadHelp)).setVisibility(View.VISIBLE);
 
         tempArray = new ArrayList<String>();
         regionArray = new ArrayList<String>();

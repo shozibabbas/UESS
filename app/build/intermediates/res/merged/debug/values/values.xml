@@ -147,7 +147,7 @@
     <color name="maingreen">#9bba3b</color>
     <color name="mainmenubuttonbg">#ffa900</color>
     <color name="mainmenubuttonbg2">#78ad09</color>
-    <color name="mainorange">#f58220</color>
+    <color name="mainorange">#fff58220</color>
     <color name="mainorangelight">#f79a4b</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
@@ -343,6 +343,7 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="action_sign_out">Sign out</string>
     <string name="app_name">Ufone Employee Self Service</string>
+    <string name="askHR">Ask HR</string>
     <string name="cityName">City</string>
     <string name="dashboard_welcome_message">Swipe right to view options or click the Drawer icon in the top-left corner</string>
     <string name="downloadHelp">\?</string>

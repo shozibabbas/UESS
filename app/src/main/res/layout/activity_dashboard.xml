@@ -24,21 +24,22 @@
             android:onClick="backPress" />
 
         <LinearLayout
+            android:id="@+id/dashboard_con"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="109dp"
+                android:layout_gravity="right"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="16dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ufonelogo"
-                android:layout_gravity="right" />
+                android:src="@drawable/ufonelogo" />
 
             <TextView
                 android:id="@+id/textView"
@@ -57,7 +58,9 @@
                 android:layout_height="match_parent"
                 android:stretchColumns="0,1">
 
-                <TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                     <Button
                         android:id="@+id/button2"
@@ -139,8 +142,34 @@
                         android:textColor="#ddffffff" />
                 </TableRow>
 
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button6"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/dashboard_con"
+                        android:layout_span="2"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainmenubutton"
+                        android:drawableTop="@drawable/assistant"
+                        android:padding="20dp"
+                        android:text="@string/askHR"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:textColor="#ddffffff" />
+                </TableRow>
+
             </TableLayout>
+
         </LinearLayout>
+
     </RelativeLayout>
 
 
