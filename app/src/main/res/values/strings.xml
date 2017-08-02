@@ -64,6 +64,7 @@
     <string name="netFund">Net Fund</string>
 
     <!-- Medical Service Screen -->
+    <string name="downloadHelp">\?</string>
     <string name="regionName">Region</string>
     <string name="cityName">City</string>
     <string name="hospName">Hospital</string>

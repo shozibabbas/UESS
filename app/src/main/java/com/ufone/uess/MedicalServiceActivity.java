@@ -4,14 +4,17 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
@@ -55,6 +58,7 @@ public class MedicalServiceActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medical_service);
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.medicalServiceRecord);
+        ((ImageButton) findViewById(R.id.titlebarSignOut)).setVisibility(View.VISIBLE);
 
         tempArray = new ArrayList<String>();
         regionArray = new ArrayList<String>();
@@ -70,6 +74,12 @@ public class MedicalServiceActivity extends Activity {
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(), "Error: " + e.toString(), Toast.LENGTH_LONG).show();
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(MedicalServiceActivity.this, DashboardActivity.class));
+        finish();
     }
 
     public void requestMS(View v) throws Exception {
@@ -126,6 +136,10 @@ public class MedicalServiceActivity extends Activity {
     public void backButton(View v) {
         startActivity(new Intent(MedicalServiceActivity.this, DashboardActivity.class));
         finish();
+    }
+
+    public void helpDownload(View v) {
+        startActivity(new Intent(MedicalServiceActivity.this, HelpActivity.class));
     }
 
     class MyAsyncTask extends AsyncTask<String, String, String> implements AdapterView.OnItemSelectedListener {

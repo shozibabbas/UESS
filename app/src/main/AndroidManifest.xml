@@ -43,7 +43,8 @@
         <activity android:name=".EmployeeProfileActivity" />
         <activity android:name=".LeaveBalanceActivity" />
         <activity android:name=".ProvidentFundBalanceActivity" />
-        <activity android:name=".MedicalServiceActivity"></activity>
+        <activity android:name=".MedicalServiceActivity" />
+        <activity android:name=".HelpActivity"></activity>
     </application>
 
 </manifest>

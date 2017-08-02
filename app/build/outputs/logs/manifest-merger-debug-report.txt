@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:2:1-49:12
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:2:1-50:12
 	package
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml
@@ -22,6 +22,7 @@ MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\sayyed.shozib\.an
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\d74ebd5cbc1590b08261e2671e2f10fdbf75dd9b\output\AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\d2f6549b23bcc08186c50b07fb32c59e05a34684\output\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\dc48b933aca33527b477a97eaf801cd685eb10b6\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\sayyed.shozib\.android\build-cache\f60245f747560a7da8fe22a18a52b0061e316603\output\AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\7eee190ee0abde9a72e11012c0f78ca6c1c61775\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -69,12 +70,13 @@ ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:21:22-69
 application
-ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:23:5-47:19
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:23:5-48:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sayyed.shozib\.android\build-cache\8ab6e931c64945db293ab9d906e74a3fe12b3538\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\7eee190ee0abde9a72e11012c0f78ca6c1c61775\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\d74ebd5cbc1590b08261e2671e2f10fdbf75dd9b\output\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\d2f6549b23bcc08186c50b07fb32c59e05a34684\output\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\sayyed.shozib\.android\build-cache\dc48b933aca33527b477a97eaf801cd685eb10b6\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\sayyed.shozib\.android\build-cache\f60245f747560a7da8fe22a18a52b0061e316603\output\AndroidManifest.xml:26:5-20
 	android:label
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:26:9-41
 	android:allowBackup
@@ -124,6 +126,16 @@ ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:45:19-63
 activity#com.ufone.uess.MedicalServiceActivity
-ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:46:9-69
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:46:9-60
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:46:19-57
+activity#com.ufone.uess.HelpActivity
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:47:9-59
+	android:name
+		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:47:19-47
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\sayyed.shozib\.android\build-cache\f60245f747560a7da8fe22a18a52b0061e316603\output\AndroidManifest.xml:22:5-24:34
+	android:value
+		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\sayyed.shozib\.android\build-cache\f60245f747560a7da8fe22a18a52b0061e316603\output\AndroidManifest.xml:24:9-31
+	android:name
+		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\sayyed.shozib\.android\build-cache\f60245f747560a7da8fe22a18a52b0061e316603\output\AndroidManifest.xml:23:9-47
