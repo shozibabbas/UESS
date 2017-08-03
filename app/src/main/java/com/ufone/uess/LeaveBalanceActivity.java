@@ -6,11 +6,19 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.CardView;
 import android.text.SpannableString;
+import android.text.style.TextAppearanceSpan;
 import android.text.style.UnderlineSpan;
+import android.view.Gravity;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -19,6 +27,7 @@ import android.widget.Toast;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -37,7 +46,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.leaveBalance);
         ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
 
-        /*// user authentication
+        // user authentication
         if (!UserAuthentication.authenticate())
             startActivity(new Intent(LeaveBalanceActivity.this, LoginActivity.class));
 
@@ -53,7 +62,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
             df.execute();
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(), "Error: " + e.toString(), Toast.LENGTH_LONG).show();
-        }*/
+        }
     }
 
     // creating sign out box
@@ -80,8 +89,10 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                 .show();
     }
 
+    @SuppressWarnings("ResourceType")
     @Override
     public void processFinish(String output) {
+
         if (output.equals("")) {
             Toast.makeText(getApplicationContext(), "Error: Cannot fetch data", Toast.LENGTH_LONG).show();
             finish();
@@ -96,7 +107,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
         assocArray.put("Leave_Availed", "Leaves Availed");
         assocArray.put("Avail_Balance", "Available Balance");
 
-        ArrayList<ArrayList<Integer>> colorArray = new ArrayList<ArrayList<Integer>>();
+        /*ArrayList<ArrayList<Integer>> colorArray = new ArrayList<ArrayList<Integer>>();
         ArrayList<Integer> colorScheme = new ArrayList<Integer>();
         colorScheme.add(R.color.bg_row_1_1);
         colorScheme.add(R.color.bg_row_1_2);
@@ -108,84 +119,144 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
         colorScheme = new ArrayList<Integer>();
         colorScheme.add(R.color.bg_row_3_1);
         colorScheme.add(R.color.bg_row_3_2);
-        colorArray.add(colorScheme);
+        colorArray.add(colorScheme);*/
 
-        //TextView tv = (TextView) findViewById(R.id.textView4);
-        TableLayout tableLayout = (TableLayout) findViewById(R.id.l_b_TableLayout);
+        ArrayList<Integer> imageArray = new ArrayList<>();
+        imageArray.add(R.drawable.leavebg1);
+        imageArray.add(R.drawable.leavebg3);
+        imageArray.add(R.drawable.leavebg2);
 
+
+        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.svll);
 
         try {
             JSONArray ja = new JSONArray(output);
 
-            int color = 0;
+
+            int imageCount = 0;
+
             ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
+
             for(int i = 0; i < ja.length(); i++) {
                 JSONObject jObject = ja.getJSONObject(i);
                 Iterator<?> keys = jObject.keys();
 
-                ArrayList<Integer> colors = colorArray.get(color % 1);
+                CardView cardView = new CardView(LeaveBalanceActivity.this);
+                {
+                    LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+                    int m = getResources().getDimensionPixelSize(R.dimen.space_8);
+                    lp.setMargins(m, m, m, m);
+                    lp.gravity = Gravity.CENTER;
+                    cardView.setLayoutParams(lp);
+                }
+                cardView.setCardBackgroundColor(ContextCompat.getColor(LeaveBalanceActivity.this, R.color.maingreen));
+                cardView.setRadius(4);
+                cardView.setCardElevation(5);
+                linearLayout.addView(cardView);
 
-                int palette = 0;
+                RelativeLayout relativeLayout = new RelativeLayout(LeaveBalanceActivity.this);
+                {
+                    LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+                    relativeLayout.setLayoutParams(lp);
+                }
+                cardView.addView(relativeLayout);
 
-                TableRow trSp = new TableRow(LeaveBalanceActivity.this);
-                trSp.setPadding(8,5,5,8);
-                tableLayout.addView(trSp);
+                ImageView imageView = new ImageView(LeaveBalanceActivity.this);
+                imageView.setId(1);
+                {
+                    RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, getResources().getDimensionPixelSize(R.dimen.card_height));
+                    imageView.setLayoutParams(lp);
+                }
+                imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                imageView.setImageResource(imageArray.get(imageCount++ % 3));
+                imageView.setColorFilter(Color.parseColor("#66000000"));
+                relativeLayout.addView(imageView);
 
-                TableRow trTitle = new TableRow(LeaveBalanceActivity.this);
-                trTitle.setPadding(0,3,8,3);
-                TextView title = new TextView(LeaveBalanceActivity.this);
-                SpannableString uContent = new SpannableString(jObject.get("Leave_Type").toString());
-                uContent.setSpan(new UnderlineSpan(), 0, uContent.length(), 0);
-                title.setTextAppearance(LeaveBalanceActivity.this, android.R.style.TextAppearance_DeviceDefault_Small);
-                title.setTextColor(Color.parseColor("#FF000000"));
-                title.setTypeface(null, Typeface.BOLD);
-                title.setText(uContent);
-                trTitle.addView(title);
-                tableLayout.addView(trTitle);
-
-                while( keys.hasNext() ) {
-                    TableRow tr = new TableRow(LeaveBalanceActivity.this);
-                    tr.setBackgroundResource(colors.get(palette % 2));
-                    tr.setPadding(8,6,8,6);
-
-                    TextView keyTv = new TextView(LeaveBalanceActivity.this);
-                    keyTv.setPadding(0,0,25,0);
-                    keyTv.setTypeface(null, Typeface.BOLD);
-                    TextView valueTv = new TextView(LeaveBalanceActivity.this);
-                    valueTv.setLayoutParams(new TableRow.LayoutParams(1));
-
-                    String key = (String)keys.next();
-                    keyTv.setText(assocArray.get(key));
-
-                    if(key.equals("Leave_Type"))
-                        continue;
-
-                    if(key.equals("Start_Date") || key.equals("End_Date")) {
-                        SimpleDateFormat input = new SimpleDateFormat("yyyy-MM-dd");
-                        Date dateValue = input.parse(jObject.get(key).toString());
-                        SimpleDateFormat o = new SimpleDateFormat("MMM dd, yy");
-                        valueTv.setText(o.format(dateValue));
+                TextView textViewLeaveType = new TextView(LeaveBalanceActivity.this);
+                textViewLeaveType.setId(2);
+                {
+                    int m = getResources().getDimensionPixelSize(R.dimen.space_8);
+                    textViewLeaveType.setPadding(m, 0, m, m);
+                    RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+                    textViewLeaveType.setLayoutParams(lp);
+                    textViewLeaveType.setText(jObject.get("Leave_Type").toString());
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        textViewLeaveType.setTextAppearance(android.R.style.TextAppearance_DeviceDefault_Large);
+                    } else {
+                        textViewLeaveType.setTextAppearance(LeaveBalanceActivity.this, android.R.style.TextAppearance_DeviceDefault_Large);
                     }
-                    else
-                        valueTv.setText(jObject.get(key).toString());
-                    tr.addView(keyTv);
-                    tr.addView(valueTv);
-                    tableLayout.addView(tr);
-                    palette++;
+                    textViewLeaveType.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, android.R.color.white));
+                    textViewLeaveType.setTypeface(null, Typeface.BOLD);
+                    lp.addRule(RelativeLayout.ALIGN_BOTTOM, imageView.getId());
+                    relativeLayout.addView(textViewLeaveType, lp);
                 }
 
-                color++;
-                //tv.append("\n--\n");
+                TextView textViewDates = new TextView(LeaveBalanceActivity.this);
+                textViewDates.setId(3);
+                {
+                    int m = getResources().getDimensionPixelSize(R.dimen.space_8);
+                    textViewDates.setPadding(m, m, m, 0);
+                    textViewDates.setGravity(Gravity.LEFT);
+
+                    SimpleDateFormat input = new SimpleDateFormat("yyyy-MM-dd");
+                    Date dateValue1 = input.parse(jObject.get("Start_Date").toString());
+                    Date dateValue2 = input.parse(jObject.get("End_Date").toString());
+                    SimpleDateFormat o = new SimpleDateFormat("MMM dd, yy");
+                    textViewDates.setText(o.format(dateValue1) + " to " + o.format(dateValue2));
+                    textViewDates.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, android.R.color.white));
+
+                    RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+                    lp.addRule(RelativeLayout.ALIGN_LEFT, imageView.getId());
+                    lp.addRule(RelativeLayout.ABOVE, textViewLeaveType.getId());
+                    relativeLayout.addView(textViewDates, lp);
+                }
+
+                TableLayout tableLayout = new TableLayout(LeaveBalanceActivity.this);
+                {
+                    int m = getResources().getDimensionPixelSize(R.dimen.space_8);
+                    tableLayout.setPadding(m, m, m, m);
+                    tableLayout.setColumnStretchable(1, true);
+                    RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
+                    lp.addRule(RelativeLayout.BELOW, imageView.getId());
+                    relativeLayout.addView(tableLayout, lp);
+                }
+
+                while (keys.hasNext()) {
+                    String key = (String)keys.next();
+
+                    if (key.equals("Leave_Type") || key.equals("Start_Date") || key.equals("End_Date"))
+                        continue;
+
+                    TableRow tableRow = new TableRow(LeaveBalanceActivity.this);
+                    {
+                        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
+                        int m = getResources().getDimensionPixelSize(R.dimen.space_3);
+                        tableRow.setPadding(0, m, 0, m);
+                        tableLayout.addView(tableRow);
+                    }
+
+                    {
+                        TextView textView = new TextView(LeaveBalanceActivity.this);
+                        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+                        textView.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, android.R.color.white));
+                        textView.setTypeface(null, Typeface.BOLD);
+                        textView.setText(assocArray.get(key));
+                        tableRow.addView(textView);
+                    }
+
+                    {
+                        TextView textView = new TextView(LeaveBalanceActivity.this);
+                        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+                        textView.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, android.R.color.white));
+                        textView.setGravity(Gravity.RIGHT);
+                        textView.setText(jObject.get(key).toString());
+                        tableRow.addView(textView);
+                    }
+                }
             }
-
-        } catch (JSONException e) {
-            e.printStackTrace();
         } catch (Exception e) {
-            TextView tv = new TextView(LeaveBalanceActivity.this);
-            tv.setText(e.toString());
-            tableLayout.addView(tv);
+            e.printStackTrace();
         }
-
     }
 
     public void backButton(View v) {
