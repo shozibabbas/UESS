@@ -14,7 +14,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ccc"
+        android:background="#ffeeeeee"
+        android:fadingEdgeLength="40dp"
+        android:paddingBottom="8dp"
         android:requiresFadingEdge="vertical"
         android:scrollbars="none">
 

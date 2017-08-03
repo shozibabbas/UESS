@@ -147,7 +147,7 @@
     <color name="maingreen">#9bba3b</color>
     <color name="mainmenubuttonbg">#ffa900</color>
     <color name="mainmenubuttonbg2">#78ad09</color>
-    <color name="mainorange">#fff58220</color>
+    <color name="mainorange">#f58220</color>
     <color name="mainorangelight">#f79a4b</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
@@ -291,7 +291,7 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="card_height">160dp</dimen>
+    <dimen name="card_height">200dp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>

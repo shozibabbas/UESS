@@ -145,7 +145,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                 {
                     LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
                     int m = getResources().getDimensionPixelSize(R.dimen.space_8);
-                    lp.setMargins(m, m, m, m);
+                    lp.setMargins(m, m, m, 0);
                     lp.gravity = Gravity.CENTER;
                     cardView.setLayoutParams(lp);
                 }
@@ -169,15 +169,16 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                 }
                 imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                 imageView.setImageResource(imageArray.get(imageCount++ % 3));
-                imageView.setColorFilter(Color.parseColor("#66000000"));
+                imageView.setColorFilter(Color.parseColor("#99f58220"));
                 relativeLayout.addView(imageView);
 
                 TextView textViewLeaveType = new TextView(LeaveBalanceActivity.this);
                 textViewLeaveType.setId(2);
                 {
                     int m = getResources().getDimensionPixelSize(R.dimen.space_8);
-                    textViewLeaveType.setPadding(m, 0, m, m);
-                    RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+                    textViewLeaveType.setPadding(m, m, m, m);
+                    textViewLeaveType.setGravity(Gravity.LEFT);
+                    RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
                     textViewLeaveType.setLayoutParams(lp);
                     textViewLeaveType.setText(jObject.get("Leave_Type").toString());
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -187,7 +188,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                     }
                     textViewLeaveType.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, android.R.color.white));
                     textViewLeaveType.setTypeface(null, Typeface.BOLD);
-                    lp.addRule(RelativeLayout.ALIGN_BOTTOM, imageView.getId());
+                    lp.addRule(RelativeLayout.ALIGN_TOP, imageView.getId());
                     relativeLayout.addView(textViewLeaveType, lp);
                 }
 
@@ -195,8 +196,9 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                 textViewDates.setId(3);
                 {
                     int m = getResources().getDimensionPixelSize(R.dimen.space_8);
-                    textViewDates.setPadding(m, m, m, 0);
+                    textViewDates.setPadding(m, 0, m, m);
                     textViewDates.setGravity(Gravity.LEFT);
+                    textViewDates.setTypeface(null, Typeface.BOLD);
 
                     SimpleDateFormat input = new SimpleDateFormat("yyyy-MM-dd");
                     Date dateValue1 = input.parse(jObject.get("Start_Date").toString());
@@ -205,9 +207,9 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                     textViewDates.setText(o.format(dateValue1) + " to " + o.format(dateValue2));
                     textViewDates.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, android.R.color.white));
 
-                    RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+                    RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
                     lp.addRule(RelativeLayout.ALIGN_LEFT, imageView.getId());
-                    lp.addRule(RelativeLayout.ABOVE, textViewLeaveType.getId());
+                    lp.addRule(RelativeLayout.BELOW, textViewLeaveType.getId());
                     relativeLayout.addView(textViewDates, lp);
                 }
 
@@ -215,9 +217,12 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                 {
                     int m = getResources().getDimensionPixelSize(R.dimen.space_8);
                     tableLayout.setPadding(m, m, m, m);
+                    tableLayout.setBackgroundColor(Color.parseColor("#ffffffff"));
                     tableLayout.setColumnStretchable(1, true);
+                    //tableLayout.setBackgroundColor(Color.parseColor("#669bba3b"));
                     RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
-                    lp.addRule(RelativeLayout.BELOW, imageView.getId());
+                    lp.addRule(RelativeLayout.ALIGN_BOTTOM, imageView.getId());
+                    //lp.addRule(RelativeLayout.BELOW, textViewDates.getId());
                     relativeLayout.addView(tableLayout, lp);
                 }
 
@@ -232,13 +237,14 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
                         int m = getResources().getDimensionPixelSize(R.dimen.space_3);
                         tableRow.setPadding(0, m, 0, m);
+
                         tableLayout.addView(tableRow);
                     }
 
                     {
                         TextView textView = new TextView(LeaveBalanceActivity.this);
                         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-                        textView.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, android.R.color.white));
+                        textView.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, R.color.cardText));
                         textView.setTypeface(null, Typeface.BOLD);
                         textView.setText(assocArray.get(key));
                         tableRow.addView(textView);
@@ -247,8 +253,9 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                     {
                         TextView textView = new TextView(LeaveBalanceActivity.this);
                         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-                        textView.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, android.R.color.white));
+                        textView.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, R.color.cardText));
                         textView.setGravity(Gravity.RIGHT);
+                        textView.setTypeface(null, Typeface.BOLD);
                         textView.setText(jObject.get(key).toString());
                         tableRow.addView(textView);
                     }
