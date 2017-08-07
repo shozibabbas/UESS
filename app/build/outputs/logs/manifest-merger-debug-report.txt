@@ -130,7 +130,7 @@ ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:46:19-57
 activity#com.ufone.uess.HelpActivity
-ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:47:9-59
+ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:47:9-50
 	android:name
 		ADDED from C:\Users\sayyed.shozib\Desktop\Shozib's Files\UESS\app\src\main\AndroidManifest.xml:47:19-47
 meta-data#android.support.VERSION

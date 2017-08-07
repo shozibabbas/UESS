@@ -44,7 +44,7 @@
         <activity android:name=".LeaveBalanceActivity" />
         <activity android:name=".ProvidentFundBalanceActivity" />
         <activity android:name=".MedicalServiceActivity" />
-        <activity android:name=".HelpActivity"></activity>
+        <activity android:name=".HelpActivity" />
     </application>
 
 </manifest>

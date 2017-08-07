@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.PasswordTransformationMethod;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -191,11 +193,12 @@ public class LoginActivity extends Activity implements AsyncResponse {
             try {
                 StorageController.writeData("Emp_No", ((JSONObject) responseArray.getJSONObject(0)).get("Emp_No").toString());
                 StorageController.writeData("AD_Name", ((JSONObject) responseArray.getJSONObject(0)).get("AD_Name").toString());
-            } catch (JSONException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             finish();
-            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+            if (UserAuthentication.authenticate())
+                startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
         }
         else {
             progressBar.setVisibility(View.GONE);

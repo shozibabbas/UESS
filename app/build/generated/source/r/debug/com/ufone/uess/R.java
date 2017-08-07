@@ -2219,16 +2219,17 @@ containing a value of this type.
         public static final int medical=0x7f02005d;
         public static final int mobilehome=0x7f02005e;
         public static final int money=0x7f02005f;
-        public static final int notification_template_icon_bg=0x7f020069;
+        public static final int notification_template_icon_bg=0x7f02006a;
         public static final int orange_button=0x7f020060;
-        public static final int organization=0x7f020061;
-        public static final int paymenthistory=0x7f020062;
-        public static final int persona=0x7f020063;
-        public static final int placeholder=0x7f020064;
-        public static final int settings=0x7f020065;
-        public static final int shutdown=0x7f020066;
-        public static final int ufonelogo=0x7f020067;
-        public static final int ufonelogotrans=0x7f020068;
+        public static final int orange_button_rounded=0x7f020061;
+        public static final int organization=0x7f020062;
+        public static final int paymenthistory=0x7f020063;
+        public static final int persona=0x7f020064;
+        public static final int placeholder=0x7f020065;
+        public static final int settings=0x7f020066;
+        public static final int shutdown=0x7f020067;
+        public static final int ufonelogo=0x7f020068;
+        public static final int ufonelogotrans=0x7f020069;
     }
     public static final class id {
         public static final int action0=0x7f0b0096;
@@ -2292,7 +2293,6 @@ containing a value of this type.
         public static final int e_p_TAddress=0x7f0b007a;
         public static final int edit_query=0x7f0b004b;
         public static final int email=0x7f0b0083;
-        public static final int email_login_form=0x7f0b0082;
         public static final int email_sign_in_button=0x7f0b0086;
         public static final int end=0x7f0b0022;
         public static final int end_padder=0x7f0b00a2;
@@ -2309,17 +2309,17 @@ containing a value of this type.
         public static final int imageView=0x7f0b005b;
         public static final int imageView2=0x7f0b0087;
         public static final int imageView3=0x7f0b0068;
+        public static final int imageView5=0x7f0b007e;
         public static final int info=0x7f0b00a1;
-        public static final int l_b_TableLayout=0x7f0b007d;
         public static final int line1=0x7f0b009b;
         public static final int line3=0x7f0b009f;
         public static final int linearLayout=0x7f0b0088;
         public static final int listMode=0x7f0b0012;
         public static final int list_item=0x7f0b0030;
-        public static final int loggingText=0x7f0b0080;
+        public static final int loggingText=0x7f0b0081;
         public static final int login=0x7f0b0085;
-        public static final int login_form=0x7f0b0081;
-        public static final int login_progress=0x7f0b007f;
+        public static final int login_form=0x7f0b0082;
+        public static final int login_progress=0x7f0b0080;
         public static final int m_s_Buttons=0x7f0b0090;
         public static final int m_s_Container=0x7f0b0089;
         public static final int m_s_Submit=0x7f0b0091;
@@ -2372,7 +2372,7 @@ containing a value of this type.
         public static final int status_bar_latest_event_content=0x7f0b0098;
         public static final int submit_area=0x7f0b0054;
         public static final int sv=0x7f0b006d;
-        public static final int svll=0x7f0b007e;
+        public static final int svll=0x7f0b007d;
         public static final int tab1=0x7f0b006c;
         public static final int tab2=0x7f0b0077;
         public static final int tabHost=0x7f0b006b;
@@ -2381,6 +2381,7 @@ containing a value of this type.
         public static final int text2=0x7f0b009e;
         public static final int textSpacerNoButtons=0x7f0b003c;
         public static final int textView=0x7f0b005c;
+        public static final int textView2=0x7f0b007f;
         public static final int time=0x7f0b009c;
         public static final int title=0x7f0b0032;
         public static final int title_template=0x7f0b0037;
@@ -2434,11 +2435,11 @@ containing a value of this type.
         public static final int activity_employee_profile=0x7f03001a;
         public static final int activity_help=0x7f03001b;
         public static final int activity_leave_balance=0x7f03001c;
-        public static final int activity_leave_balance_1=0x7f03001d;
-        public static final int activity_login=0x7f03001e;
-        public static final int activity_main=0x7f03001f;
-        public static final int activity_medical_service=0x7f030020;
-        public static final int activity_provident_fund_balance=0x7f030021;
+        public static final int activity_login=0x7f03001d;
+        public static final int activity_main=0x7f03001e;
+        public static final int activity_medical_service=0x7f03001f;
+        public static final int activity_provident_fund_balance=0x7f030020;
+        public static final int activity_provident_fund_balance_1=0x7f030021;
         public static final int notification_media_action=0x7f030022;
         public static final int notification_media_cancel_action=0x7f030023;
         public static final int notification_template_big_media=0x7f030024;
@@ -2534,6 +2535,11 @@ containing a value of this type.
         public static final int Animation_AppCompat_DropDownUp=0x7f08008c;
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
          */
         public static final int AppBaseTheme=0x7f08000b;
         public static final int AppTheme=0x7f080037;

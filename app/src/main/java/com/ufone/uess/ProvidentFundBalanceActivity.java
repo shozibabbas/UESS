@@ -34,7 +34,7 @@ public class ProvidentFundBalanceActivity extends Activity implements AsyncRespo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_provident_fund_balance);
+        setContentView(R.layout.activity_provident_fund_balance_1);
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.providentFundBalance);
 
         // user authentication
@@ -102,7 +102,7 @@ public class ProvidentFundBalanceActivity extends Activity implements AsyncRespo
 
             SimpleDateFormat input = new SimpleDateFormat("yyyy-MM-dd");
             Date dateValue = input.parse(jObject.get("Start_Date").toString());
-            SimpleDateFormat o = new SimpleDateFormat("MMMM dd, yyyy");
+            SimpleDateFormat o = new SimpleDateFormat("MMM dd, yy");
             p_f_b_StartDate.setText(o.format(dateValue));
 
             dateValue = input.parse(jObject.get("End_Date").toString());

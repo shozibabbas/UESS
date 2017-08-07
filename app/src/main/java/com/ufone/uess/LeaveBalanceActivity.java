@@ -10,9 +10,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
-import android.text.SpannableString;
-import android.text.style.TextAppearanceSpan;
-import android.text.style.UnderlineSpan;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
@@ -25,9 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -41,7 +36,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_leave_balance_1);
+        setContentView(R.layout.activity_leave_balance);
 
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.leaveBalance);
         ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
@@ -244,7 +239,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                     {
                         TextView textView = new TextView(LeaveBalanceActivity.this);
                         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-                        textView.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, R.color.cardText));
+                        textView.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, R.color.mainorange));
                         textView.setTypeface(null, Typeface.BOLD);
                         textView.setText(assocArray.get(key));
                         tableRow.addView(textView);
@@ -255,7 +250,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
                         textView.setTextColor(ContextCompat.getColor(LeaveBalanceActivity.this, R.color.cardText));
                         textView.setGravity(Gravity.RIGHT);
-                        textView.setTypeface(null, Typeface.BOLD);
+                        //textView.setTypeface(null, Typeface.BOLD);
                         textView.setText(jObject.get(key).toString());
                         tableRow.addView(textView);
                     }
