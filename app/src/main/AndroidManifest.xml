@@ -36,15 +36,28 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DashboardActivity"
+            android:parentActivityName=".LoginActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".EmployeeProfileActivity" />
-        <activity android:name=".LeaveBalanceActivity" />
-        <activity android:name=".ProvidentFundBalanceActivity" />
-        <activity android:name=".MedicalServiceActivity" />
-        <activity android:name=".HelpActivity" />
+        <activity
+            android:name=".EmployeeProfileActivity"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".LeaveBalanceActivity"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".ProvidentFundBalanceActivity"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".MedicalServiceActivity"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".HelpActivity"
+            android:parentActivityName=".MedicalServiceActivity" />
+        <activity android:name=".AskHRActivity"></activity>
     </application>
 
 </manifest>

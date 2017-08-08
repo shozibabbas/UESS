@@ -80,6 +80,7 @@ public class MedicalServiceActivity extends Activity {
     public void onBackPressed() {
         startActivity(new Intent(MedicalServiceActivity.this, DashboardActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
     }
 
     public void requestMS(View v) throws Exception {
@@ -118,10 +119,11 @@ public class MedicalServiceActivity extends Activity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         UserAuthentication.unauthenticate();
-                        finish();
                         Intent intent = new Intent(MedicalServiceActivity.this, LoginActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
+                        finish();
+                        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -136,6 +138,7 @@ public class MedicalServiceActivity extends Activity {
     public void backButton(View v) {
         startActivity(new Intent(MedicalServiceActivity.this, DashboardActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
     }
 
     public void helpDownload(View v) {
@@ -167,6 +170,7 @@ public class MedicalServiceActivity extends Activity {
             if (result.equals("")) {
                 Toast.makeText(getApplicationContext(), "Error: Cannot fetch data", Toast.LENGTH_LONG).show();
                 finish();
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
                 return;
             }
             ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);

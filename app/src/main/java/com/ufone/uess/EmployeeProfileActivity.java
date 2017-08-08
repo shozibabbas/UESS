@@ -117,7 +117,6 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         UserAuthentication.unauthenticate();
-                        finish();
                         Intent intent = new Intent(EmployeeProfileActivity.this, LoginActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
@@ -137,6 +136,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
     public void onBackPressed() {
         startActivity(new Intent(EmployeeProfileActivity.this, DashboardActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
     }
 
     //this override the implemented method from asyncTask
@@ -212,6 +212,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
     public void backButton(View v) {
         startActivity(new Intent(EmployeeProfileActivity.this, DashboardActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
     }
 
 }

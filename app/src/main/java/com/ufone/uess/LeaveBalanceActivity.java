@@ -69,10 +69,10 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         UserAuthentication.unauthenticate();
-                        finish();
                         Intent intent = new Intent(LeaveBalanceActivity.this, LoginActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
+                        //finish();
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -101,20 +101,6 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
         assocArray.put("Current_Year_Entitlement", "Leaves Allowed");
         assocArray.put("Leave_Availed", "Leaves Availed");
         assocArray.put("Avail_Balance", "Available Balance");
-
-        /*ArrayList<ArrayList<Integer>> colorArray = new ArrayList<ArrayList<Integer>>();
-        ArrayList<Integer> colorScheme = new ArrayList<Integer>();
-        colorScheme.add(R.color.bg_row_1_1);
-        colorScheme.add(R.color.bg_row_1_2);
-        colorArray.add(colorScheme);
-        colorScheme = new ArrayList<Integer>();
-        colorScheme.add(R.color.bg_row_2_1);
-        colorScheme.add(R.color.bg_row_2_2);
-        colorArray.add(colorScheme);
-        colorScheme = new ArrayList<Integer>();
-        colorScheme.add(R.color.bg_row_3_1);
-        colorScheme.add(R.color.bg_row_3_2);
-        colorArray.add(colorScheme);*/
 
         ArrayList<Integer> imageArray = new ArrayList<>();
         imageArray.add(R.drawable.leavebg1);
@@ -264,11 +250,13 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
     public void backButton(View v) {
         startActivity(new Intent(LeaveBalanceActivity.this, DashboardActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
     }
 
     @Override
     public void onBackPressed() {
         startActivity(new Intent(LeaveBalanceActivity.this, DashboardActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
     }
 }

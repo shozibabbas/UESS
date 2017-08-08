@@ -34,7 +34,7 @@ public class ProvidentFundBalanceActivity extends Activity implements AsyncRespo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_provident_fund_balance_1);
+        setContentView(R.layout.activity_provident_fund_balance);
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.providentFundBalance);
 
         // user authentication
@@ -73,6 +73,7 @@ public class ProvidentFundBalanceActivity extends Activity implements AsyncRespo
                         Intent intent = new Intent(ProvidentFundBalanceActivity.this, LoginActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
+                        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -118,11 +119,13 @@ public class ProvidentFundBalanceActivity extends Activity implements AsyncRespo
     public void backButton(View v) {
         startActivity(new Intent(ProvidentFundBalanceActivity.this, DashboardActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
     }
 
     @Override
     public void onBackPressed() {
         startActivity(new Intent(ProvidentFundBalanceActivity.this, DashboardActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
     }
 }

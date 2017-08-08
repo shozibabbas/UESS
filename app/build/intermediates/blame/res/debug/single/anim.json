@@ -13,15 +13,23 @@
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\38b0e776cd45d7af7a11dc1f1bcb89b312c422cf\\output\\res\\anim\\design_snackbar_in.xml"
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\4f2923820f5a036b09f63b843f91f4dde4caa07f\\output\\res\\anim\\design_snackbar_in.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\38b0e776cd45d7af7a11dc1f1bcb89b312c422cf\\output\\res\\anim\\design_fab_out.xml"
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\4f2923820f5a036b09f63b843f91f4dde4caa07f\\output\\res\\anim\\design_fab_out.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
         "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_from_right.xml",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\anim\\slide_from_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_to_left.xml",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\anim\\slide_to_left.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
@@ -29,7 +37,7 @@
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\38b0e776cd45d7af7a11dc1f1bcb89b312c422cf\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\4f2923820f5a036b09f63b843f91f4dde4caa07f\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
@@ -41,11 +49,11 @@
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\38b0e776cd45d7af7a11dc1f1bcb89b312c422cf\\output\\res\\anim\\design_snackbar_out.xml"
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\4f2923820f5a036b09f63b843f91f4dde4caa07f\\output\\res\\anim\\design_snackbar_out.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\38b0e776cd45d7af7a11dc1f1bcb89b312c422cf\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\4f2923820f5a036b09f63b843f91f4dde4caa07f\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
@@ -53,11 +61,19 @@
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\38b0e776cd45d7af7a11dc1f1bcb89b312c422cf\\output\\res\\anim\\design_fab_in.xml"
+        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\4f2923820f5a036b09f63b843f91f4dde4caa07f\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_from_left.xml",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\anim\\slide_from_left.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
         "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_to_right.xml",
+        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\anim\\slide_to_right.xml"
     },
     {
         "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",

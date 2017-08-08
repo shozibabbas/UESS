@@ -24,27 +24,38 @@ public class DashboardActivity extends Activity {
         if(!UserAuthentication.authenticate()) {
             startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
             finish();
+            overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
         }
     }
 
     public void openEmployeeProfile(View v) {
         startActivity(new Intent(DashboardActivity.this, EmployeeProfileActivity.class));
+        overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
         finish();
     }
 
     public void openLeaveBalance(View v) {
         startActivity(new Intent(DashboardActivity.this, LeaveBalanceActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
     }
 
     public void openProvidentFundBalance(View v) {
         startActivity(new Intent(DashboardActivity.this, ProvidentFundBalanceActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
     }
 
     public void openMedicalService(View v) {
         startActivity(new Intent(DashboardActivity.this, MedicalServiceActivity.class));
         finish();
+        overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
+    }
+
+    public void openAskHR(View v) {
+        /*startActivity(new Intent(DashboardActivity.this, AskHRActivity.class));
+        finish();
+        overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);*/
     }
 
     // creating sign out box
@@ -60,6 +71,7 @@ public class DashboardActivity extends Activity {
                         Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
+                        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -80,6 +92,7 @@ public class DashboardActivity extends Activity {
         else {
             finish();
             startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
         }
 
     }

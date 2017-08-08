@@ -197,8 +197,11 @@ public class LoginActivity extends Activity implements AsyncResponse {
                 e.printStackTrace();
             }
             finish();
-            if (UserAuthentication.authenticate())
+            if (UserAuthentication.authenticate()) {
                 startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+                finish();
+                overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
+            }
         }
         else {
             progressBar.setVisibility(View.GONE);
