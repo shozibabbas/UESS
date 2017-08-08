@@ -39,7 +39,7 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
         setContentView(R.layout.activity_leave_balance);
 
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.leaveBalance);
-        ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
+        //((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
 
         // user authentication
         if (!UserAuthentication.authenticate())

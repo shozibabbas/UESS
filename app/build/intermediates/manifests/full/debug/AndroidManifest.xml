@@ -62,6 +62,7 @@
             android:name="com.ufone.uess.HelpActivity"
             android:parentActivityName="com.ufone.uess.MedicalServiceActivity" />
         <activity android:name="com.ufone.uess.AskHRActivity" />
+        <activity android:name="com.ufone.uess.AskHRQueryActivity" />
     </application>
 
 </manifest>

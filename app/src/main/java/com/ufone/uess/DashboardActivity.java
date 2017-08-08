@@ -53,9 +53,9 @@ public class DashboardActivity extends Activity {
     }
 
     public void openAskHR(View v) {
-        /*startActivity(new Intent(DashboardActivity.this, AskHRActivity.class));
+        startActivity(new Intent(DashboardActivity.this, AskHRActivity.class));
         finish();
-        overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);*/
+        overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
     }
 
     // creating sign out box

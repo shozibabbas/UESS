@@ -34,4 +34,11 @@
     <color name="green_click">#00bb00</color>
     <color name="green_hover">#ff009900</color>
 
+    <!-- colors for ask hr -->
+    <color name="HRred">#aa0000</color>
+    <color name="HRyellow">#FFAAAA00</color>
+    <color name="HRgreen">#FF00AA00</color>
+    <color name="bglightgray">#f6f6f6</color>
+
+
 </resources>

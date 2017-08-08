@@ -57,7 +57,8 @@
         <activity
             android:name=".HelpActivity"
             android:parentActivityName=".MedicalServiceActivity" />
-        <activity android:name=".AskHRActivity"></activity>
+        <activity android:name=".AskHRActivity" />
+        <activity android:name=".AskHRQueryActivity"></activity>
     </application>
 
 </manifest>

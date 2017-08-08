@@ -36,8 +36,8 @@ public class MainActivity extends Activity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-				startActivity(new Intent(MainActivity.this, AskHRActivity.class));
-				finish();
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                finish();
             }
         }, 2000);
         //try {
