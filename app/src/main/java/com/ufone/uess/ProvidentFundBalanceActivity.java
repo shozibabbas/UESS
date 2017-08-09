@@ -81,7 +81,6 @@ public class ProvidentFundBalanceActivity extends Activity implements AsyncRespo
                         Toast.makeText(getApplicationContext(), "\"No\" selected", Toast.LENGTH_SHORT).show();
                     }
                 })
-                .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
 

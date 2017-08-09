@@ -39,7 +39,6 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
         setContentView(R.layout.activity_leave_balance);
 
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.leaveBalance);
-        //((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
 
         // user authentication
         if (!UserAuthentication.authenticate())
@@ -80,7 +79,6 @@ public class LeaveBalanceActivity extends Activity implements AsyncResponse {
                         Toast.makeText(getApplicationContext(), "\"No\" selected", Toast.LENGTH_SHORT).show();
                     }
                 })
-                .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
 

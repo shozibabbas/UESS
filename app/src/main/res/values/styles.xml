@@ -27,7 +27,7 @@
         <item name="colorPrimary">@color/mainorange</item>
         <item name="android:tabWidgetStyle">@color/maingreen</item>
         <item name="colorPrimaryDark">@android:color/white</item>
-        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowBackground">@color/bgyellowish</item>
         <item name="android:listViewStyle">@style/TransparentListView</item>
         <item name="android:expandableListViewStyle">@style/TransparentExpandableListView</item>
 

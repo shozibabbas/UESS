@@ -9,64 +9,12 @@
     android:animateLayoutChanges="true">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <include
+        layout="@layout/titlebar"
+        layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/titlebarBackBtn"
-            style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/orange_button"
-            android:onClick="backButton"
-            android:padding="16dp"
-            android:src="?android:attr/actionModeCloseDrawable"
-            android:tint="@color/material_dark_color" />
-
-        <TextView
-            android:id="@+id/titlebarTitle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0.3"
-            android:background="@color/mainorange"
-            android:gravity="center"
-            android:padding="16dp"
-            android:text="@string/empProfile"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-            android:textColor="@android:color/background_light"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/titlebarSignOut"
-            style="@style/Widget.AppCompat.ImageButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/orange_button"
-            android:onClick="backPress"
-            android:padding="8dp"
-            android:src="@android:drawable/ic_lock_power_off"
-            android:tint="@color/material_dark_color" />
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:id="@+id/e_p_ProgressBarContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:animateLayoutChanges="true">
-
-        <ProgressBar
-            android:id="@+id/progressBarMain"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_weight="1" />
-    </RelativeLayout>
+        android:animateLayoutChanges="true" />
 
     <LinearLayout
         android:id="@+id/e_p_Container"
@@ -75,7 +23,7 @@
         android:animateLayoutChanges="true"
         android:background="@drawable/mainmenubuttongradient2"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -95,7 +43,6 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
-            android:text="Sayyed Shozib Abbas"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -129,6 +76,8 @@
                     android:id="@android:id/tabs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/bgyellowish"
+                    android:elevation="10dp"
                     android:showDividers="beginning|middle|end"></TabWidget>
 
                 <FrameLayout
@@ -140,7 +89,6 @@
                         android:id="@+id/tab1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@android:color/white"
                         android:orientation="vertical">
 
                         <ScrollView
@@ -510,7 +458,6 @@
                         android:id="@+id/tab2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@android:color/white"
                         android:orientation="vertical">
 
                         <ScrollView

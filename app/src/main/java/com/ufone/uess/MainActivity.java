@@ -16,6 +16,7 @@ import android.os.Handler;
 import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,8 +37,8 @@ public class MainActivity extends Activity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
-                finish();
+				startActivity(new Intent(MainActivity.this, DashboardActivity.class));
+				finish();
             }
         }, 2000);
         //try {

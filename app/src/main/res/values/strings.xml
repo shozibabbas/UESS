@@ -42,6 +42,7 @@
     <string name="providentFundBalance">Provident Fund Balance</string>
     <string name="medicalServiceRecord">Medical Service</string>
     <string name="askHR">Ask HR</string>
+    <string name="askHRQuery">Create HR Query</string>
 
     <!-- Joining date labels -->
     <string name="empJoiningDate">Joining Date</string>

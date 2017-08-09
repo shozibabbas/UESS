@@ -90,6 +90,7 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
                 .setTitle("This is some title");
         signoutAlert = builder.create();
 
+        ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.empProfile);
         e_p_ProgressBar.setVisibility(View.VISIBLE);
 
         // data request
@@ -128,7 +129,6 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
                         Toast.makeText(getApplicationContext(), "\"No\" selected", Toast.LENGTH_SHORT).show();
                     }
                 })
-                .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
 
@@ -184,7 +184,6 @@ public class EmployeeProfileActivity extends Activity implements AsyncResponse {
         }
         e_p_ProgressBar.setVisibility(View.GONE);
         e_p_Container.setVisibility(View.VISIBLE);
-        ((RelativeLayout) findViewById(R.id.e_p_ProgressBarContainer)).setVisibility(View.GONE);
     }
 
     public void showHDateTo(View v) {

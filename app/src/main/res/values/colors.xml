@@ -39,6 +39,7 @@
     <color name="HRyellow">#FFAAAA00</color>
     <color name="HRgreen">#FF00AA00</color>
     <color name="bglightgray">#f6f6f6</color>
+    <color name="bgyellowish">#fff8e1</color>
 
 
 </resources>

@@ -27,7 +27,8 @@
         android:id="@+id/ask_hr_Spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp" />
+        android:layout_margin="8dp"
+        android:spinnerMode="dialog" />
 
     <TextView
         android:id="@+id/textView5"
@@ -48,13 +49,17 @@
         android:ems="10"
         android:gravity="top"
         android:hint="Enter your query here"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/ask_hr_Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/orange_button"
+        android:hint="Enter your query here"
+        android:onClick="submitHRQuery"
         android:text="Submit"
         android:textColor="@android:color/white" />
 </LinearLayout>
