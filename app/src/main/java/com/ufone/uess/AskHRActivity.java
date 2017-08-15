@@ -11,6 +11,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class AskHRActivity extends Activity {
 
     @Override
@@ -20,6 +23,8 @@ public class AskHRActivity extends Activity {
 
         ((TextView) findViewById(R.id.titlebarTitle)).setText(R.string.askHR);
         ((ProgressBar) findViewById(R.id.progressBarMain)).setVisibility(View.GONE);
+
+        GetQueryDetails saq = new GetQueryDetails();
     }
 
     public void openCreateHR(View v) {
@@ -71,5 +76,45 @@ public class AskHRActivity extends Activity {
     public void viewComments(View v) {
         CustomDialogClass cdd = new CustomDialogClass(AskHRActivity.this);
         cdd.show();
+    }
+
+    private class ShowAllQueries implements AsyncResponse {
+        ShowAllQueries() {
+            AsyncDataFetcher df = new AsyncDataFetcher();
+            df.delegate = ShowAllQueries.this;
+            df.setURL("http://172.16.105.190/AskHR.asmx");
+            df.setRequestPath("Get_All_Comments");
+            df.setResponsePath("Get_All_CommentsResult");
+            Map<String, String> m = new HashMap<>();
+            m.put("ask_id", "3");
+            m.put("key", StorageController.readString("Emp_No"));
+            df.setRequestParams(m);
+            df.execute();
+        }
+
+        @Override
+        public void processFinish(String output) {
+            Toast.makeText(getApplicationContext(), output, Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private class GetQueryDetails implements AsyncResponse {
+        GetQueryDetails() {
+            AsyncDataFetcher df = new AsyncDataFetcher();
+            df.delegate = GetQueryDetails.this;
+            df.setURL("http://172.16.105.190/AskHR.asmx");
+            df.setRequestPath("Get_Employee_Queries_Details");
+            df.setResponsePath("Get_Employee_Queries_DetailsResult");
+            Map<String, String> m = new HashMap<>();
+            m.put("emp_No", "3939");
+            m.put("key", StorageController.readString("Emp_No"));
+            df.setRequestParams(m);
+            df.execute();
+        }
+
+        @Override
+        public void processFinish(String output) {
+            Toast.makeText(getApplicationContext(), output, Toast.LENGTH_LONG).show();
+        }
     }
 }

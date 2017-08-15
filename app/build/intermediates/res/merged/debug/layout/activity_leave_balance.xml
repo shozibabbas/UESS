@@ -12,7 +12,7 @@
         layout="@layout/titlebar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:animateLayoutChanges="true"/>
+        android:animateLayoutChanges="true" />
 
     <ScrollView
         android:layout_width="match_parent"

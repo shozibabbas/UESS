@@ -3006,7 +3006,7 @@ containing a value of this type.
         public static final int imageView=0x7f0c0083;
         public static final int imageView2=0x7f0c00aa;
         public static final int imageView3=0x7f0c008b;
-        public static final int imageView5=0x7f0c00a1;
+        public static final int imageView5=0x7f0c00a3;
         public static final int info=0x7f0c00d0;
         public static final int item_touch_helper_previous_elevation=0x7f0c0005;
         public static final int left=0x7f0c002b;
@@ -3015,10 +3015,10 @@ containing a value of this type.
         public static final int linearLayout=0x7f0c00ab;
         public static final int listMode=0x7f0c0014;
         public static final int list_item=0x7f0c0049;
-        public static final int loggingText=0x7f0c00a4;
+        public static final int loggingText=0x7f0c00a2;
         public static final int login=0x7f0c00a8;
         public static final int login_form=0x7f0c00a5;
-        public static final int login_progress=0x7f0c00a3;
+        public static final int login_progress=0x7f0c00a1;
         public static final int m_s_Buttons=0x7f0c00b3;
         public static final int m_s_Container=0x7f0c00ac;
         public static final int m_s_Submit=0x7f0c00b4;
@@ -3097,7 +3097,7 @@ containing a value of this type.
         public static final int text2=0x7f0c00cd;
         public static final int textSpacerNoButtons=0x7f0c0055;
         public static final int textView=0x7f0c0084;
-        public static final int textView2=0x7f0c00a2;
+        public static final int textView2=0x7f0c00a4;
         public static final int textView5=0x7f0c007d;
         public static final int textView6=0x7f0c0075;
         public static final int time=0x7f0c00cb;

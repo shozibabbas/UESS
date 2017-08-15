@@ -82,7 +82,7 @@
             android:layout_weight="0.06"
             android:padding="8dp"
             android:visibility="visible"
-            android:animateLayoutChanges="true"/>
+            android:animateLayoutChanges="true" />
 
     </TableRow>
 

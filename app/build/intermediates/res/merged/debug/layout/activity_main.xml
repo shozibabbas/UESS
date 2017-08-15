@@ -13,5 +13,5 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@drawable/ufonelogo"
-        android:animateLayoutChanges="true"/>
+        android:animateLayoutChanges="true" />
 </RelativeLayout>

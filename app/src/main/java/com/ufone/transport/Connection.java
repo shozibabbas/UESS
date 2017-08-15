@@ -24,8 +24,8 @@ public class Connection{
 	String userNameHeader ;
 	String passwordHeader ; 
 	public static String multipleSaveResult;
-	public static String URL = "http://172.16.105.190/WebService.asmx" ;
-	com.ufone.transport.HttpsTransporSE androidHttpsTransport = null;
+    public String URL = "http://172.16.105.190/WebService.asmx";
+    com.ufone.transport.HttpsTransporSE androidHttpsTransport = null;
 	HttpTransportSE androidHttpTransport = null;
 	public Connection(String method){         
 

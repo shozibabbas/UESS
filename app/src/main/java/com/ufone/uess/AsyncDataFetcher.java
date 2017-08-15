@@ -20,6 +20,7 @@ public class AsyncDataFetcher extends AsyncTask<String, String, String> {
     protected static String responsePath = null;
     protected static Map<String, String> requestParams = null; // for keeping parameters to be POSTed to the request path
     protected static String response = null;
+    protected String URL = null;
 
     public String getRequestPath() {
         return requestPath;
@@ -37,6 +38,10 @@ public class AsyncDataFetcher extends AsyncTask<String, String, String> {
         this.responsePath = responsePath;
     }
 
+    public void setURL(String URL) {
+        this.URL = URL;
+    }
+
     public Map<String, String> getRequestParams() {
         return requestParams;
     }
@@ -50,6 +55,8 @@ public class AsyncDataFetcher extends AsyncTask<String, String, String> {
     @Override
     protected String doInBackground(String... params) {
         Connection connection = new Connection(requestPath);
+        if (this.URL != null)
+            connection.URL = this.URL;
         if (requestParams != null)
 
             // for adding parameters to the connection
