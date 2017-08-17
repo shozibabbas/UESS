@@ -1,26 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ufonelogotrans.png",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-hdpi\\ufonelogotrans.png"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\drawer_shadow.9.png",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable-hdpi\\drawer_shadow.9.png"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ufonelogo.png",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-hdpi\\ufonelogo.png"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_drawer.png",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable-hdpi\\ic_drawer.png"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_drawer.png",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-hdpi\\ic_drawer.png"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ufonelogo.png",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable-hdpi\\ufonelogo.png"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\shutdown.png",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable-hdpi\\shutdown.png"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\shutdown.png",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-hdpi\\shutdown.png"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ufonelogotrans.png",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable-hdpi\\ufonelogotrans.png"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\drawer_shadow.9.png",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable-hdpi\\drawer_shadow.9.png"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     }
 ]

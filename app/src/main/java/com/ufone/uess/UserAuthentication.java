@@ -7,7 +7,13 @@ import android.util.Log;
  */
 
 public class UserAuthentication {
+
+    // change this to true for debugging without authentication
+    private final static boolean debugMode = true;
+
     public static boolean authenticate() {
+        if (debugMode)
+            return true;
         if(StorageController.readFloat("lastCallTime") == 0.0f) {
             return false;
         }

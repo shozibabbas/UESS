@@ -58,6 +58,9 @@ public class AskHRQueryActivity extends Activity {
                     public void onClick(DialogInterface dialog, int which) {
                         SubmitQuery sq = new SubmitQuery();
                         Toast.makeText(getApplicationContext(), "Query Sent. You will be contacted shortly.", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(AskHRQueryActivity.this, AskHRActivity.class));
+                        finish();
+                        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -158,17 +161,7 @@ public class AskHRQueryActivity extends Activity {
 
         @Override
         public void processFinish(String output) {
-            /*try {
-                if (output.equals("true")) {
-                    Toast.makeText(getApplicationContext(), "Query Sent. You will be contacted shortly.", Toast.LENGTH_LONG).show();
-                    startActivity(new Intent(AskHRQueryActivity.this, AskHRActivity.class));
-                    finish();
-                    overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
-                }
-            }
-            catch(Exception e) {
-                Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
-            }*/
+            return;
         }
     }
 }

@@ -3,48 +3,138 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\sayyed.shozib\.android\build-cache\7eee190ee0abde9a72e11012c0f78ca6c1c61775\output\jars\classes.jar"
+        jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\e4ee7bc48d43c933b4d37800de8d708d6123d136\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\pre-dexed\debug\classes_cfbddfc8172fd678dd187f5d70a696c242a80942.jar" />
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\classes_8847717c65e19e8e8f8a4da9d715bf69266353d8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\sayyed.shozib\.android\build-cache\f60245f747560a7da8fe22a18a52b0061e316603\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.0"
-        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
-        <dex dex="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\pre-dexed\debug\classes_456005804d2cc7b91b28597e500b71efcec19525.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\libs\ksoap2-android-assembly-2.6.0-jar-with-dependencies.jar"
+        jar="E:\AndroidProjects\UESS\app\libs\ksoap2-android-assembly-2.6.0-jar-with-dependencies.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="400a2afc7073b2e68c3841db8b9b71d4182f242d">
-        <dex dex="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.6.0-jar-with-dependencies_f9dde26768994495d9bad6f8c035321c4a17621b.jar" />
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.6.0-jar-with-dependencies_cd74222740ed43a8ed2b83ce5ee933136888bf03.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\AndroidProjects\UESS\app\libs\ksoap2-android-assembly-2.6.0-jar-with-dependencies.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="400a2afc7073b2e68c3841db8b9b71d4182f242d">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\transforms\dex\debug\folders\1000\2\ksoap2-android-assembly-2.6.0-jar-with-dependencies_cd74222740ed43a8ed2b83ce5ee933136888bf03\classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\sayyed.shozib\.android\build-cache\d74ebd5cbc1590b08261e2671e2f10fdbf75dd9b\output\jars\classes.jar"
+        jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\5e117ab4458392d2f02b160dec9066e89fadf2bb\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\pre-dexed\debug\classes_0ee8139b7ebc6c9497ef32cf6aeb15f1abbd0cf7.jar" />
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\classes_253ef84f4b096aaf0c86ebd8f8c78e04307c4b29.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\sayyed.shozib\.android\build-cache\d2f6549b23bcc08186c50b07fb32c59e05a34684\output\jars\classes.jar"
+        jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\85dfcde40348dc93d377da20697861f277d7fba5\output\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_2ce3f4dd3ff253a5b514f3cc8527923761d0879b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\85dfcde40348dc93d377da20697861f277d7fba5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\classes_0b70ff90b19b4c1f6191c1bad05e31f4b10e4cf4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\b0003ae9c8f95845a3c89304932b61a54279cae4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\classes_31b6213e2d7fb0822c2d4723033065c53647a203.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sayyed Shozib Abbas\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_f48f71a46c690a099078fa4b2d8ab8138f0ba359.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\AndroidProjects\UESS\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e6489ec84007adfbe7e0343ade74c3b9229f45b1">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b9583ceabbfc134a67a38a755447c8a7c53e4ee2\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\ee349d7f9ecd7074580307394e2740961d24c60f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\classes_80b7ac8168757ab9fbed60357096591a28f94208.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\AndroidProjects\UESS\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d6985e23666f8fa01aa784c5a645c3cb7390ee0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\112d0db14ef13a1a89531b34c18cacd664578be5\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\sayyed.shozib\Desktop\Shozib&apos;s Files\UESS\app\build\intermediates\pre-dexed\debug\classes_1528057d32642605c23d761b38d8d1c6f6c54cb2.jar" />
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\classes_8e780cd41f1fe2137737c30dede8be10a1315843.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\cf3028cd9b6ef7b528b8344355902c96cb51c1ed\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\classes_cd0a2311a9486d287fc32517b61bb56ebe940f95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sayyed Shozib Abbas\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_4bff3267438932e2ad035753d31f0ed53e42de63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\84105c7cf01c9dcb5bfd8fa118b18612524c6f88\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\classes_418584519be5e0b7f19a2609eeb46167ed31173a.jar" />
     </item>
 
 </items>

@@ -1,214 +1,142 @@
 [
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_vector_test.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\84105c7cf01c9dcb5bfd8fa118b18612524c6f88\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\38b0e776cd45d7af7a11dc1f1bcb89b312c422cf\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mainmenubutton.xml",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable\\mainmenubutton.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_background.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable\\app_background.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\green_button.xml",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable\\green_button.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mainmenubuttongradient.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable\\mainmenubuttongradient.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mainmenubuttongradient.xml",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable\\mainmenubuttongradient.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\notification_icon_background.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_button_rounded.xml",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable\\orange_button_rounded.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_dialog_material_background.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\4f2923820f5a036b09f63b843f91f4dde4caa07f\\output\\res\\drawable\\design_snackbar_background.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\84105c7cf01c9dcb5bfd8fa118b18612524c6f88\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\4f2923820f5a036b09f63b843f91f4dde4caa07f\\output\\res\\drawable\\design_fab_background.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_background.xml",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable\\app_background.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\green_button.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable\\green_button.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mainmenubutton.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable\\mainmenubutton.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mainmenubuttongradient2.xml",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable\\mainmenubuttongradient2.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\38b0e776cd45d7af7a11dc1f1bcb89b312c422cf\\output\\res\\drawable\\navigation_empty_icon.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mainmenubuttongradient2.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable\\mainmenubuttongradient2.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\notification_bg.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\notification_bg_low.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_button.xml",
+        "source": "E:\\AndroidProjects\\UESS\\app\\src\\main\\res\\drawable\\orange_button.xml"
     },
     {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_button.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable\\orange_button.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_button_rounded.xml",
-        "source": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\src\\main\\res\\drawable\\orange_button_rounded.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\38b0e776cd45d7af7a11dc1f1bcb89b312c422cf\\output\\res\\drawable\\design_password_eye.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\7eee190ee0abde9a72e11012c0f78ca6c1c61775\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\sayyed.shozib\\.android\\build-cache\\418c7d631f705d02f89e6cf14c5aec0077508a81\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "merged": "E:\\AndroidProjects\\UESS\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Sayyed Shozib Abbas\\.android\\build-cache\\e4ee7bc48d43c933b4d37800de8d708d6123d136\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     }
 ]

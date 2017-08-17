@@ -1,4 +1,7 @@
-#Tue Aug 15 17:11:54 PKT 2017
-base.0=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=C\:\\Users\\sayyed.shozib\\Desktop\\Shozib's Files\\UESS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+#Fri Aug 18 02:03:34 PKT 2017
+base.0=E\:\\AndroidProjects\\UESS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d6985e23666f8fa01aa784c5a645c3cb7390ee0e
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=E\:\\AndroidProjects\\UESS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b9583ceabbfc134a67a38a755447c8a7c53e4ee2\\classes.dex
+base.1=E\:\\AndroidProjects\\UESS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b9583ceabbfc134a67a38a755447c8a7c53e4ee2
+file.0=E\:\\AndroidProjects\\UESS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d6985e23666f8fa01aa784c5a645c3cb7390ee0e\\classes.dex

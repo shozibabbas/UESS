@@ -12,7 +12,13 @@
     <dimen name="space_3">3dp</dimen>
     <dimen name="space_5">5dp</dimen>
     <dimen name="space_8">8dp</dimen>
+    <dimen name="space_16">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="ask_hr_status_image_width">20dp</dimen>
+    <dimen name="ask_hr_status_image_height">60dp</dimen>
+
+    <dimen name="ask_hr_button_height">30dp</dimen>
 
 </resources>

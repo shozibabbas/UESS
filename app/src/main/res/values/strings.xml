@@ -75,6 +75,7 @@
     <string name="mssSubmit">Check Now</string>
     <string name="mssReset">Reset</string>
     <string name="title_activity_ask_hr">AskHRActivity</string>
+    <string name="ask_hr_button">View Comments</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
     <!-- TODO: Remove or change this placeholder text -->
