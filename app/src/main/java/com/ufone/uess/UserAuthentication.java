@@ -9,7 +9,7 @@ import android.util.Log;
 public class UserAuthentication {
 
     // change this to true for debugging without authentication
-    private final static boolean debugMode = true;
+    private final static boolean debugMode = false;
 
     public static boolean authenticate() {
         if (debugMode)

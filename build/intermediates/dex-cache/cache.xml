@@ -20,15 +20,6 @@
         <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.6.0-jar-with-dependencies_cd74222740ed43a8ed2b83ce5ee933136888bf03.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="E:\AndroidProjects\UESS\app\libs\ksoap2-android-assembly-2.6.0-jar-with-dependencies.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="400a2afc7073b2e68c3841db8b9b71d4182f242d">
-        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\transforms\dex\debug\folders\1000\2\ksoap2-android-assembly-2.6.0-jar-with-dependencies_cd74222740ed43a8ed2b83ce5ee933136888bf03\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\5e117ab4458392d2f02b160dec9066e89fadf2bb\output\jars\classes.jar"
         jumboMode="false"
@@ -74,15 +65,6 @@
         <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_f48f71a46c690a099078fa4b2d8ab8138f0ba359.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="E:\AndroidProjects\UESS\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="e6489ec84007adfbe7e0343ade74c3b9229f45b1">
-        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b9583ceabbfc134a67a38a755447c8a7c53e4ee2\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="C:\Users\Sayyed Shozib Abbas\.android\build-cache\ee349d7f9ecd7074580307394e2740961d24c60f\output\jars\classes.jar"
         jumboMode="false"
@@ -90,15 +72,6 @@
         revision="26.0.0"
         sha1="914f5d3e3ace66080e59613708f06d129a222e25">
         <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\pre-dexed\debug\classes_80b7ac8168757ab9fbed60357096591a28f94208.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidProjects\UESS\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="E:\AndroidProjects\UESS\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d6985e23666f8fa01aa784c5a645c3cb7390ee0e\classes.dex" />
     </item>
     <item
         is-multidex="false"
